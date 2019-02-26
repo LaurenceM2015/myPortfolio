@@ -4,7 +4,8 @@
   "description": "Landing page for personal portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass resources/sass/main.scss resources/css/style.css"
+    
   },
   "repository": {
     "type": "git",

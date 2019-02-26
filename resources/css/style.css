@@ -1,0 +1,11 @@
+body {
+  background-color: #f4f4f4;
+  color: #555; }
+
+h1 {
+  color: orangered; }
+  h1 span {
+    color: yellow; }
+
+p {
+  color: greenyellow; }
