@@ -1,0 +1,19 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Landing page for personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaurenceM2015/myPortfolio.git"
+  },
+  "author": "Laurence Mabilleau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaurenceM2015/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/LaurenceM2015/myPortfolio#readme"
+}
