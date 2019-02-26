@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/LaurenceM2015/myPortfolio/issues"
   },
-  "homepage": "https://github.com/LaurenceM2015/myPortfolio#readme"
+  "homepage": "https://github.com/LaurenceM2015/myPortfolio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
 }
