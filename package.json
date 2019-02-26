@@ -4,7 +4,7 @@
   "description": "Landing page for personal portfolio",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass resources/sass/main.scss resources/css/style.css"
+    "compile:sass": "node-sass resources/sass/main.scss resources/css/style.css -w"
     
   },
   "repository": {
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/LaurenceM2015/myPortfolio/issues"
   },
-  "homepage": "https://github.com/LaurenceM2015/myPortfolio#readme",
+  "homepage": "https://github.com/LaurenceM2015/myPortfolio/",
   "dependencies": {},
   "devDependencies": {
     "node-sass": "^4.11.0"
