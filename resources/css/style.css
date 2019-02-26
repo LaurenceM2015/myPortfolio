@@ -3,9 +3,11 @@ body {
   color: #555; }
 
 h1 {
-  color: orangered; }
+  color: orangered;
+  text-transform: uppercase; }
   h1 span {
     color: yellow; }
 
 p {
-  color: greenyellow; }
+  color: greenyellow;
+  line-height: 1.5; }
