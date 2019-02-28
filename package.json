@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass resources/sass/main.scss resources/css/style.css -w"
-    
   },
   "repository": {
     "type": "git",

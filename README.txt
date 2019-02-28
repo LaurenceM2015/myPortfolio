@@ -6,3 +6,4 @@ and created a new branch called tempWork.
 4: Implementing the 7-1 CSS Architecture with Sass, add a vendor folder for the 3th partirs and created the gitignore. 
 5: Create costme grid system with media query breakpoints, modified the base font-size.
 6: Implementing BEM Methology. SECTION 1 NAVIGATION
+7: NAVIGATION Part 1.
