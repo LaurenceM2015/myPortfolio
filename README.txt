@@ -10,10 +10,14 @@ and created a new branch called tempWork.
 7: Adding mixin, variables, base, utilities, and button files.
 8: Added images and Favicons. 
 
-// SECTIONS ONE: Mobil NAVIGATION
+// SECTIONS ONE: 
+        
+        Mobil NAVIGATION
 1: Styling the main NAVIGATION (toggle button)
 2: Styling nav, list, item, and link
 3: Styling NAVIGATION checkbox toggle working.
 4: Styling NAVIGATION icon.
 
+    Tablets and Desktop NAVIGATION
+1: Media Query for the Navigation big tablets.
 
