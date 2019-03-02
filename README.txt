@@ -7,6 +7,6 @@ and created a new branch called tempWork.
 5: Create costme grid system with media query breakpoints, modified the base font-size.
 6: Implementing BEM Methology. SECTION 1 NAVIGATION
 7: Adding mixin, variables, base, utilities, and button files.
-8: 
+8: Added images and Favicons. 
 
 
