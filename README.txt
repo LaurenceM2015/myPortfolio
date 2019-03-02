@@ -11,6 +11,7 @@ and created a new branch called tempWork.
 8: Added images and Favicons. 
 
 // SECTIONS ONE: NAVIGATION
-1:
+1: Styling the main NAVIGATION (toggle button)
+2: Styling nav, item, and link
 
 
