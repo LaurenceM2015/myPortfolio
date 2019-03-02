@@ -12,6 +12,6 @@ and created a new branch called tempWork.
 
 // SECTIONS ONE: NAVIGATION
 1: Styling the main NAVIGATION (toggle button)
-2: Styling nav, item, and link
+2: Styling nav, list, item, and link
 
 
