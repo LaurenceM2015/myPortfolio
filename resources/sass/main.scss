@@ -1,18 +1,26 @@
-body{
-    background-color: #f4f4f4;
-    color: #555;
-}
+@import "abstracts/function";
+@import "abstracts/mixin";
+@import "abstracts/variables";
 
-h1{
-    color: orangered;
-    text-transform: uppercase;
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-    span{
-        color: yellow;
-    }
-}
+@import "components/bg-video";
+@import "components/buttons";
+@import "components/card";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/form";
+@import "components/popup";
+@import "components/story";
 
-p{
-    color: greenyellow;
-    line-height: 1.5;
-}
+@import "layouts/footer";
+@import "layouts/grid";
+@import "layouts/header";
+@import "layouts/navigation";
+
+@import "pages/home";
+
+

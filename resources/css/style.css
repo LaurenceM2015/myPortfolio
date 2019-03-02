@@ -1,13 +1,152 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 50%; }
+  @media (min-width: 56.25em) {
+    html {
+      font-size: 62.5%; } }
+  @media (min-width: 75em) {
+    html {
+      font-size: 80%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 100%; } }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  font-size: 1.6rem; }
+
+::selection {
+  background-color: #18BC9C;
+  color: #fff; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+a {
+  text-decoration: none; }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+a:hover,
+a:active {
+  outline: 0; }
+
 body {
   background-color: #f4f4f4;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
   color: #555; }
+
+h1, h2, h2, h4 {
+  text-align: center; }
 
 h1 {
   color: orangered;
   text-transform: uppercase; }
   h1 span {
-    color: yellow; }
+    color: yellow;
+    text-transform: capitalize; }
 
 p {
-  color: greenyellow;
-  line-height: 1.5; }
+  color: greenyellow; }
+  p:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 37.5em) {
+    .container {
+      max-width: 54rem; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 72rem; } }
+  @media (min-width: 56.25em) {
+    .container {
+      max-width: 96rem; } }
+  @media (min-width: 75em) {
+    .container {
+      max-width: 114rem; } }
+
+.container-full-width {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: orangered;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-1-of-5 {
+    width: calc((100% - 4 * 6rem) / 5); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
