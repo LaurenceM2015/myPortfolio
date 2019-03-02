@@ -1,4 +1,5 @@
 Hello this is my new Portfolio.
+// Project skeloton is done
 1: At this piont I have created a json file and install node-sass in the project
 and created a new branch called tempWork.
 2: created a sass and css files, and wrote a compile sass script in json file, and run npm to compil sass file to css file.
@@ -8,5 +9,8 @@ and created a new branch called tempWork.
 6: Implementing BEM Methology. SECTION 1 NAVIGATION
 7: Adding mixin, variables, base, utilities, and button files.
 8: Added images and Favicons. 
+
+// SECTIONS ONE: NAVIGATION
+1:
 
 
