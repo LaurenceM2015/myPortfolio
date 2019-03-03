@@ -28,4 +28,9 @@ Added a logo in the main Navigation section.
 // SECTION TWO: MAIN HEADER
 In this section has a background video, with an overlay on top and animated hero text box.
 1: Adding a background video and changed logo and link list color.
-2: Adding a hero text box with annimation. 
+2: Adding a hero text box with annimation.
+
+    ANIMATIONS
+1: Move in from the left animation.
+2: Move in from the right animation.
+3: Move in from the buttom animation.    
