@@ -21,3 +21,6 @@ and created a new branch called tempWork.
     Tablets and Desktop NAVIGATION
 1: Media Query for the Navigation big tablets.
 
+    NAVIGATION LOGO 
+Added a logo in the main Navigation section.
+

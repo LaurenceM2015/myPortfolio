@@ -247,6 +247,24 @@ p {
 
 .navigation {
   position: relative; }
+  .navigation__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+    @media (min-width: 53.125em) {
+      .navigation__logo-box {
+        top: 2rem; } }
+  .navigation__logo {
+    color: #2C3E50;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    display: inline-block;
+    color: #2C3E50;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    font-size: 100%;
+    -webkit-transition: font-size .3s;
+    transition: font-size .3s; }
   .navigation__checkbox {
     display: none; }
   .navigation__checkbox:checked ~ .navigation__background {
