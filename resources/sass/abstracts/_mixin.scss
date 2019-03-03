@@ -43,9 +43,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
         @media (min-width: 37.5em) { @content };
     }
 
-    // 900px / 16 = 56.25em
+    // 900px / 16 = 56.25em change to 800px /16 = 50
     @if $breakpoint == tab-port {
-        @media (min-width: 56.25em) { @content };
+        @media (min-width: 50em) { @content };
     }
 
     // 1200px / 16 = 75em

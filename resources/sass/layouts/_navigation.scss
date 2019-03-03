@@ -48,8 +48,8 @@
         width: 7rem;
 
         position: fixed;
-        top: 6rem;
-        right: 6rem;
+        top: 3rem;
+        right: 3rem;
         z-index: 2000;
 
         @include respond(tab-port){ display: none;}
@@ -87,8 +87,8 @@
 
     &__background{
         position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
+        top: 3.5rem;
+        right: 3.5rem;
         z-index: 1000;
 
         // The radial gradient start in the middle of an element
@@ -99,16 +99,17 @@
 
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
-        @include respond(tab-port){ display: none;}
+        @include respond(tab-port){
+            transition: none;
+            display: none;
+
+        }
     }
 
 
     // MAIN NAVBAR
     &__nav{
-        
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        
-        
         opacity: 0;
         
         position: fixed;
@@ -120,7 +121,8 @@
         width: 0;
 
         @include respond(tab-port){
-            background-color: $color-secondary;
+            //background-color: $color-secondary;
+            transition: none;
             position: relative;
             width: 100%;
             height: auto;
@@ -175,6 +177,7 @@
              transition: all .4s;
 
              @include respond(tab-port){
+                color: $color-secondary;
                 padding: 1rem;
                 font-size: 1.5rem;
              }
