@@ -22,3 +22,6 @@ and created a new branch called tempWork.
 1: Media Query for the Navigation big tablets.
 2: When the navigation is toggle open the navigation__nav list item is centered (navigation__checkbox:checked ~ navigation__nav navigation__list )
 
+    NAVIGATION LOGO 
+Added a logo in the main Navigation section.
+

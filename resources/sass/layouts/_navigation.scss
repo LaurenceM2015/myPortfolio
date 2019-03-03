@@ -1,5 +1,32 @@
 .navigation{
     position: relative;
+
+    // NAVIGATION Logo
+    &__logo-box {
+        position: absolute;
+        top: 5rem;
+        left: 3rem;
+
+        @include respond(tab-port){
+            top: 2rem;
+            left: 3rem;
+        }
+    }
+
+    &__logo{
+        color: $color-secondary;
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        display: inline-block;
+    
+        color: $color-secondary;
+        letter-spacing: .1rem;
+        font-weight: 700;
+        font-size: 100%;
+
+        -webkit-transition: font-size .3s;
+        transition: font-size .3s;
+    }
     
   
 
