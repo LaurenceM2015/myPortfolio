@@ -6,6 +6,7 @@
         position: absolute;
         top: 5rem;
         left: 3rem;
+        z-index: 100;
 
         @include respond(tab-port){
             top: 2rem;
@@ -14,18 +15,19 @@
     }
 
     &__logo{
-        color: $color-secondary;
         text-transform: uppercase;
         font-family: "Montserrat";
         display: inline-block;
-    
-        color: $color-secondary;
+        // for testing only
+        //color: $color-secondary;
+        color: $color-white;
         letter-spacing: .1rem;
         font-weight: 700;
         font-size: 100%;
 
         -webkit-transition: font-size .3s;
         transition: font-size .3s;
+       
     }
     
   
@@ -73,10 +75,6 @@
         top: 0;
     }
 
-   
-
-
-
     &__button{
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         background-color: $color-white;
@@ -93,9 +91,6 @@
 
         @include respond(tab-port){ display: none;}
     }
-
-
-     
 
     // NAVIGATION ICON
 
@@ -121,7 +116,6 @@
         &::before {top: -.8rem;}
         &::after {top: .8rem;}
     }
-
 
 
     &__background{
@@ -160,9 +154,8 @@
         width: 0;
 
         @include respond(tab-port){
-            //background-color: $color-secondary;
             transition: none;
-            position: relative;
+           // position: relative;
             width: 100%;
             height: auto;
 
@@ -214,7 +207,9 @@
              transition: all .4s;
 
              @include respond(tab-port){
-                color: $color-secondary;
+                 // testing only
+                //color: $color-secondary; 
+                color: $color-white;
                 padding: 1rem;
                 font-size: 1.5rem;
              }

@@ -10,7 +10,7 @@ and created a new branch called tempWork.
 7: Adding mixin, variables, base, utilities, and button files.
 8: Added images and Favicons. 
 
-// SECTIONS ONE: 
+// SECTIONS ONE: NAVIGATION
         
         Mobil NAVIGATION
 1: Styling the main NAVIGATION (toggle button)
@@ -25,3 +25,5 @@ and created a new branch called tempWork.
     NAVIGATION LOGO 
 Added a logo in the main Navigation section.
 
+// SECTION TWO: MAIN HEADER
+In this section has a background video, with an overlay on top and animated hero text box.
