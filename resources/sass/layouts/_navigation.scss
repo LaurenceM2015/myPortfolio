@@ -1,6 +1,8 @@
 .navigation{
-
+    position: relative;
     
+  
+
     &__checkbox{
         display: none
     }
@@ -15,6 +17,16 @@
 
     &__checkbox:checked ~ &__nav{
         opacity: 1;
+        width: 100%;
+    }
+
+    &__checkbox:checked ~ &__nav &__list{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+        text-align: center;
         width: 100%;
     }
 
@@ -142,8 +154,6 @@
         
 
         @include respond(tab-port){
-           
-            
             margin-right: 2rem;
             float: right;
         }
