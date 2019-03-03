@@ -12,13 +12,35 @@ h1, h2, h2, h4{
     text-align: center;
 }
 
-h1{
-    color: orangered;
-    text-transform: uppercase;
+.heading-primary {
+    color: $color-white;
+    margin-bottom: 4rem;
 
-    span{
-        color: yellow;
-        text-transform: capitalize;
+    &--main {
+        font-family: Montserrat;
+        text-transform: uppercase;
+        display: block;
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+        padding-bottom: 1rem;
+    
+        /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+    }
+
+    &--sub {
+        display: block;
+        font-size: 1.5rem;
+        font-family: Lato;
+        font-weight: 500;
+        letter-spacing: .5rem;
+
+        @include respond(phone) {
+            
+        }
     }
 }
 
