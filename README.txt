@@ -29,3 +29,7 @@ Added a logo in the main Navigation section.
 In this section has a background video, with an overlay on top and animated hero text box.
 1: Adding a background video and changed logo and link list color.
 2: Adding a hero text box with annimation. 
+
+// SECTION THREE: FEATURE
+
+1: Adding linea fonts.

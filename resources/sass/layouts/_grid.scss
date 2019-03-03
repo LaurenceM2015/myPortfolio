@@ -42,7 +42,7 @@
 
     [class^="col-"] {
         &:not(:last-child){margin-right: $gutter-horizontal;}
-        background-color: orangered;
+        
         float: left;
 
     }

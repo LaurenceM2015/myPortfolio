@@ -73,6 +73,9 @@ a:hover,
 a:active {
   outline: 0; }
 
+section {
+  padding: 8rem; }
+
 body {
   background-color: #f4f4f4;
   font-family: "Lato", sans-serif;
@@ -254,7 +257,6 @@ p {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: orangered;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
