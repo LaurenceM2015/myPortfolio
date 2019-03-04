@@ -81,4 +81,9 @@ a:active {
     outline: 0;
 }
 
+section{
+    padding: 10rem;
+
+        @include respond(tab-port){padding: 15rem 0;}
+}
 

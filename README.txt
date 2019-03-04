@@ -33,3 +33,5 @@ In this section has a background video, with an overlay on top and animated hero
 // SECTION THREE: FEATURE
 
 1: Adding linea fonts.
+
+// MODIFIED GRIDS 

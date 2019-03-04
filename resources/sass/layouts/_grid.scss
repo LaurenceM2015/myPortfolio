@@ -22,16 +22,29 @@
 
 
 
-.container-full-width {
+
+.container {
     width: 100%;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     margin-right: auto;
     margin-left: auto;
+
+
+     // Small and big phones.
+     @include respond(phone){max-width: 54rem;}
+
+     @include respond(tab-port){ max-width: 72rem;}
+ 
+     @include respond(tab-land){max-width: 96rem;}
+ 
+     @include respond(big-desktop){max-width: $grid-width;}
+
   }
 
+
 .row{
-    max-width: $grid-width;
+
     margin: 0 auto;
 
     &:not(:last-child) {
@@ -42,7 +55,6 @@
 
     [class^="col-"] {
         &:not(:last-child){margin-right: $gutter-horizontal;}
-        
         float: left;
 
     }

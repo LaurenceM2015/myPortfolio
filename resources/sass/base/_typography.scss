@@ -8,9 +8,14 @@ body {
     color: #555;
 }
 
-h1, h2, h2, h4{
-    text-align: center;
+h1, h2{
+    text-transform: uppercase;
+    font-weight: 700;
 }
+
+h2, h3, h4{color: $color-secondary;}
+
+h1, h2, h3, h4{text-align: center !important;}
 
 .heading-primary {
     color: $color-white;
@@ -18,7 +23,6 @@ h1, h2, h2, h4{
 
     &--main {
         font-family: Montserrat;
-        text-transform: uppercase;
         display: block;
         font-size: 3.5rem;
         font-weight: 700;
@@ -44,10 +48,36 @@ h1, h2, h2, h4{
     }
 }
 
+// SECONDARY HEADING
 
+.heading-secondary{
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    text-align: center !important;
+    display: inline-block;
+    font-size: 3rem;
+    color: transparent;
+    letter-spacing: .3px;
+    transition: all .2s;
 
-p {
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
     
+}
+
+
+
+.heading-tertiary {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+.paragraph {
+    font-size: $default-font-size;
 
     &:not(:last-child) {
         margin-bottom: 3rem;
