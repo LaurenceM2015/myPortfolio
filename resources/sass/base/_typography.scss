@@ -42,9 +42,7 @@ h1, h2, h3, h4{text-align: center !important;}
         font-weight: 500;
         letter-spacing: .5rem;
 
-        @include respond(phone) {
-            
-        }
+        
     }
 }
 
@@ -71,7 +69,7 @@ h1, h2, h3, h4{text-align: center !important;}
 
 .heading-tertiary {
     text-transform: capitalize;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     
 }
@@ -82,4 +80,17 @@ h1, h2, h3, h4{text-align: center !important;}
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+}
+
+.long-copy {
+    width: 80%;
+    margin-left: 10%;
+
+    @include respond(tab-port) {
+        line-height: 145%;
+        width: 70%;
+        margin-left: 15%;
+            
+    }
+    
 }

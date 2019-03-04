@@ -1,5 +1,12 @@
 // color
 
+:root{
+    --color-primary: #18BC9C;
+    --color-primary-light: #18BC9C;
+    --color-primary-dark: #15a589;
+    
+}
+
 $color-primary: #18BC9C !default;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #15a589;
@@ -39,7 +46,7 @@ $default-font-size: 1.6rem;
 
 $grid-width: 114rem;
 $gutter-vertical: 4rem;
-$gutter-horizontal: 3rem;
-$gutter-vertical-small: 3rem;
+$gutter-horizontal: 2rem;
+$gutter-vertical-small: 1.5rem;
 
 

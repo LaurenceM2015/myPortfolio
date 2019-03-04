@@ -31,7 +31,7 @@ In this section has a background video, with an overlay on top and animated hero
 2: Adding a hero text box with annimation. 
 
 // SECTION THREE: FEATURE
+Adding and styling the iconmoon, use of the card box shadow, 
+I have also made some modification on typography, grid, and utilities files.
 
-1: Adding linea fonts.
 
-// MODIFIED GRIDS 
