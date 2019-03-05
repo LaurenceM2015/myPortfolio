@@ -20,39 +20,5 @@
     }
 }
 
-.process-box{
-    background-color: rgba($color-white, .8);
-    font-size: 1.5rem;
-    padding: 2.5rem;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    transition: transform .3s;
-    height: auto;
 
-    &__header{
-        
-        &--icon{display: inline;}
-
-        &--heading{display: inline;}
-    }
-
-    &__icon{
-        height: 1.5rem;
-        width: 1.5rem;
-        fill: var(--color-secondary, --color-secondary-dark);
-    }
-
-    &__item{
-        font-size: 1.5rem;
-        padding: .5rem;
-
-        &:not(:last-child) {
-            border-bottom: 1px solid $color-grey-light-2;
-        }
-
-    }
-
-    
-
-}
 

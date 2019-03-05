@@ -34,5 +34,8 @@ In this section has a background video, with an overlay on top and animated hero
 Adding and styling the iconmoon, use of the card box shadow, 
 I have also made some modification on typography, grid, and utilities files.
 
+// SECTION PROCESS
+Added new icon and create 3 box.
+
 
 // SECTION FOUR: ABOUT ME
