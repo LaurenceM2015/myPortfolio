@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
-        
         <meta charset="utf-8">
         <meta name="description" content="Laurence Mabilleau personal portfolio">
         <meta name="author" content="Laurence Mabilleau">
@@ -97,8 +95,9 @@
         
         <!-- MAIN CONTENT -->
         <main class="landing-page">
+
             <!-- FEATURES SECTION -->
-            <section class="section-features">
+            <section class="section-features" id="features">
                 <div class="container">
                     <div class="row u-center-text u-margin-bottom-big">
                         <h2 class="heading-secondary u-margin-bottom-medium">
@@ -106,32 +105,35 @@
                         </h2>
                         <div class="long-copy u-margin-bottom-medium">
                             <p class="paragraph">
-                                I enjoy building a responsive layouts for all kind of devices and situations, 
-                                with  an architect large CSS codebases for reusability and maintainability using Sass
+                                I enjoy building a responsive layouts for all kind of devices and multiple browsers platforms, 
+                                with  an architect large CSS codebases for reusability and maintainability using SASS CSS Pre-processors
                                 which I can easily Convert any static sites, or Bootstrap websites into a Custom WordPress theme.
                             </p>
+
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-1-of-3">
                             <div class="feature-box">
-                                    <svg class="feature-box__icon">
-                                        <use xlink:href="vendors/img/sprite.svg#icon-mobile"></use>
-                                    </svg>
-                                <h3 class="heading-tertiary u-margin-bottom-small">Responsive Design Theme</h3>
-                                <p class="feature-box__text paragraph">
-                                    I use the  mobil first aproch, I have experience of developing RWD for multiple browsers platforms,
-                                    and devices with just HTML5, 
-                                    CSS3 and SASS CSS Pre-processors. Combine with icon or SVG font, 
-                                    depending on the theme, can use Bootstrap
-                                </p>
+                                <svg class="feature-box__icon">
+                                    <use xlink:href="vendors/img/sprite.svg#icon-mobile"></use>
+                                </svg>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Responsive Design Theme</h3>
+                                <ul class="feature-box__text">
+                                    <li>Mobil first or desktop first aproch depending on the demands</li>
+                                    <li>The custume breakpoints, with Media Queries</li>
+                                    <li>Custume grids</li>
+                                    <li>Responsive images</li>
+                                    <li>Fluild layout</li>
+                                    <li>Correct units</li>
+                                </ul>
                             </div>
                         </div><!-- ./ box 1 -->
                         
                         <div class="col-1-of-3">
                             <div class="feature-box">
                                     <svg class="feature-box__icon">
-                                        <use xlink:href="vendors/img/sprite.svg#icon-wordpress"></use>
+                                        <use xlink:href="vendors/img/sprite.svg#icon-gauge"></use>
                                     </svg>
                                 <h3 class="heading-tertiary u-margin-bottom-small">content management system</h3>
                                 <p class="feature-box__text">
@@ -142,8 +144,6 @@
                             </div>
                         </div><!-- ./ box 2 -->
 
-                     
-
                         <div class="col-1-of-3">
                             <div class="feature-box">
                                     <svg class="feature-box__icon">
@@ -151,18 +151,181 @@
                                 </svg>    
                                 <h3 class="heading-tertiary u-margin-bottom-small">Wordpress Theme Builder</h3>
                                 <p class="feature-box__text">
-                                        
-                                         
-                                        with understanding of utilizing PHP to create WordPress websites & themes,
-                                        comfortable with the process of turning static websites into dynamic WordPress websites.
-                                        Fully understand how to use Custom Post Types and Advanced Custom Fields in WordPress
-                                        Allow your clients to update their websites by themselves by creating user accounts.
+                                    with understanding of utilizing PHP to create WordPress websites & themes,
+                                    comfortable with the process of turning static websites into dynamic WordPress websites.
+                                    Fully understand how to use Custom Post Types and Advanced Custom Fields in WordPress
+                                    Allow your clients to update their websites by themselves by creating user accounts.
                                 </p>
                             </div>
                         </div><!-- ./ box 3-->
                     </div>
                 </div>
             </section><!-- ./ Features Section -->
+
+            <!-- ABOUT SECTION -->
+            <section class="section-process">
+                <div class="container">
+                    <div class="row u-center-text u-margin-bottom-big">
+                        <h2 class="heading-secondary u-margin-bottom-medium">
+                            The Build Process with 3 Pillars
+                        </h2>
+                        <p class="paragraphp u-text-white long-copy">The Three Pillar of writing good HTML and CSS, maintainable and scalable code. 
+                            To make Web Performance fast and efficiently, good clean HTML structure, with easy-to-understand name classes
+                        </p>
+                    </div>
+
+                  
+
+                    <div class="row">
+                        <div class="col-1-of-3">
+                            <div class="process-box">
+                                <div class="process-box__header u-margin-bottom-small">
+                                    <svg class="process-box__icon process-box__header--icon">
+                                        <use xlink:href="vendors/img/sprite2.svg#icon-clipboard"></use>
+                                    </svg>
+                                    <h3 class="heading-tertiary process-box__header--heading">Planning</h3>
+                                </div>
+                                
+                                
+                                <ul class="process-box__list">
+                                        
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Client interview
+                                    </li>
+                                    <li class="process-box__item"> 
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Gather consumer data</li>
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Create content strategy
+                                    </li>
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                         Analyze research
+                                    </li>
+
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Only use the images needed
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- ./ box-1-->
+
+                        <div class="col-1-of-3">
+                            <div class="process-box">
+                                <div class="process-box__header u-margin-bottom-small">
+                                    <svg class="process-box__icon process-box__header--icon">
+                                        <use xlink:href="vendors/img/sprite.svg#icon-new-message"></use>
+                                    </svg>
+                                    <h3 class="heading-tertiary process-box__header--heading">Create </h3>
+                                </div>
+                                
+
+                                <ul class="process-box__list">
+                                   
+                                   
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Growth and Reusable
+                                    </li>
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        SASS 7-1 architect folder
+                                    </li>
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Less code & HTTP requests</li>
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Compress Code and images
+                                    </li>
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Use of BEM methodology
+                                    </li>
+
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                             <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                            Use of CSS preprocessor
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+        
+                        </div><!-- ./ box-2-->
+
+                        <div class="col-1-of-3">
+                            <div class="process-box">
+                                <div class="processe-box__header u-margin-bottom-small">
+                                    <svg class="process-box__icon process-box__header--icon">
+                                        <use xlink:href="vendors/img/sprite2.svg#icon-rocket"></use>
+                                    </svg>
+                                    <h3 class="heading-tertiary process-box__header--heading">Launch and Maintemance </h3>
+                                </div>
+                               
+                                <ul class="process-box__list">
+                                    <li class="process-box__item">
+                                            <svg class="process-box__icon">
+                                                <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                            </svg>
+                                            Add Google Analytics Code and SEO.
+                                    </li>
+
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Deploy website
+                                    </li>
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Market product launch
+                                    </li>
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Collect UX data
+                                    </li>
+                                    <li class="process-box__item">
+                                        <svg class="process-box__icon">
+                                            <use xlink:href="vendors/img/sprite2.svg#icon-checkmark2"></use>
+                                        </svg>
+                                        Quarterly maintenence
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- ./ box-3-->
+                    </div>
+                </div>
+
+            </section>
 
         </main><!-- ./ Main container -->
        

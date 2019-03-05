@@ -18,7 +18,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 :root {
   --color-primary: #18BC9C;
   --color-primary-light: #18BC9C;
-  --color-primary-dark: #15a589; }
+  --color-primary-dark: #15a589;
+  --color-secondary: #2C3E50;
+  --color-secondary-dark: #273748; }
 
 *,
 *::after,
@@ -79,13 +81,12 @@ a:active {
   outline: 0; }
 
 section {
-  padding: 10rem; }
+  padding: 10rem 0; }
   @media (min-width: 56.25em) {
     section {
       padding: 15rem 0; } }
 
 body {
-  background-color: #f4f4f4;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
@@ -156,6 +157,15 @@ h1, h2, h3, h4 {
 
 .u-center-text {
   text-align: center !important; }
+
+.u-left-text {
+  text-align: left !important; }
+
+.u-right-text {
+  text-align: right !important; }
+
+.u-text-white {
+  color: #fff !important; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -266,17 +276,38 @@ h1, h2, h3, h4 {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
-  text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s;
-  height: 40rem; }
+  height: auto; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__icon {
     height: 4rem;
     width: 4rem;
     fill: var(--color-primary, --color-primary-dark); }
+
+.process-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+  height: auto; }
+  .process-box__header--icon {
+    display: inline; }
+  .process-box__header--heading {
+    display: inline; }
+  .process-box__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: var(--color-secondary, --color-secondary-dark); }
+  .process-box__item {
+    font-size: 1.5rem;
+    padding: .5rem; }
+    .process-box__item:not(:last-child) {
+      border-bottom: 1px solid #f8f9fa; }
 
 .container {
   width: 100%;
@@ -499,3 +530,10 @@ h1, h2, h3, h4 {
     transform: translateX(1rem);
     background-position: 100%;
     color: #18BC9C; }
+
+.section-features {
+  background-color: #f4f4f4; }
+
+.section-process {
+  background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.7), rgba(0, 0, 0, 0.7)), url(img/bkg-img2-min.jpg);
+  background-size: cover; }

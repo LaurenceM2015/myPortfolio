@@ -1,4 +1,11 @@
+
+// TEXT ALIGNEMENT
 .u-center-text { text-align: center !important; }
+.u-left-text {text-align: left !important;}
+.u-right-text {text-align: right !important;}
+
+// TEXT COLOR
+.u-text-white { color: $color-white !important;}
 
 .u-margin-bottom-small { margin-bottom: 1.5rem !important; }
 .u-margin-bottom-medium {

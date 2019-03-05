@@ -35,3 +35,4 @@ Adding and styling the iconmoon, use of the card box shadow,
 I have also made some modification on typography, grid, and utilities files.
 
 
+// SECTION FOUR: ABOUT ME
