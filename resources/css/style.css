@@ -15,7 +15,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
-<<<<<<< HEAD
 :root {
   --color-primary: #18BC9C;
   --color-primary-light: #18BC9C;
@@ -24,7 +23,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --color-secondary-dark: #273748;
   --color-tertiary-light: #2998ff;
   --color-tertiary-dark: #5643fa; }
-=======
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -52,7 +51,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   100% {
     opacity: 1;
     transform: translate(0); } }
->>>>>>> animation
 
 *,
 *::after,
@@ -316,6 +314,34 @@ h1, h2, h3, h4 {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.card {
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 50rem; }
+  .card__side {
+    color: #fff;
+    font-size: 2rem;
+    height: 50rem;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: .3rem; }
+    .card__side--font {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #15a589); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
