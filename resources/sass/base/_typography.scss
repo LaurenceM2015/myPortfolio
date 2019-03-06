@@ -20,6 +20,9 @@ h1, h2, h3, h4{text-align: center !important;}
     color: $color-white;
     margin-bottom: 4rem;
 
+    // to fix animation element shake.
+    backface-visibility: hidden; 
+
     &--main {
         font-family: Montserrat;
         display: block;
@@ -28,6 +31,14 @@ h1, h2, h3, h4{text-align: center !important;}
         letter-spacing: 1rem;
         padding-bottom: 1rem;
     
+        // animation testing
+        animation: moveInLeft 1s ease-out;
+        /*
+        animation-timing-function: ease-in;
+        animation-name: moveInLeft;
+        animation-duration: 5s;
+        */
+
         /*
         animation-delay: 3s;
         animation-iteration-count: 3;
@@ -41,7 +52,21 @@ h1, h2, h3, h4{text-align: center !important;}
         font-weight: 500;
         letter-spacing: .5rem;
 
+<<<<<<< HEAD
         
+=======
+        // animation testing
+        animation: moveInRight 1s ease-out;
+        /*
+        animation-timing-function: ease-in;
+        animation-name: moveInRight;
+        animation-duration: 5s;
+        */
+
+        @include respond(phone) {
+            
+        }
+>>>>>>> animation
     }
 }
 
