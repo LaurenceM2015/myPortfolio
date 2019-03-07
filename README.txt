@@ -28,7 +28,6 @@ Added a logo in the main Navigation section.
 // SECTION TWO: MAIN HEADER
 In this section has a background video, with an overlay on top and animated hero text box.
 1: Adding a background video and changed logo and link list color.
-<<<<<<< HEAD
 2: Adding a hero text box with annimation. 
 
 // SECTION THREE: FEATURE
@@ -46,8 +45,7 @@ I have also made some modification on typography, grid, and utilities files.
     side two: Portfolio title with a an call on action button
     
 
-// SECTION PROCESS
-Added new icon and create 3 box.
+
 
 
  Note: Remove card picture background image.
@@ -57,4 +55,4 @@ Added new icon and create 3 box.
 
 
 
- 2: CSS3 Pop Up box for Portfolio with a big hero image and description. 
+ 
