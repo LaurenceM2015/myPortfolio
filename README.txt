@@ -44,6 +44,8 @@ Added new icon and create 3 box.
 1: Part One: Rotating card with background blend mode.
     side one: image with a bkg blanded mode.
     side two: Portfolio title with a an call on action button
+    
+    Note: Remove card picture background image.
 
  
 
