@@ -1,15 +1,16 @@
 .card {
+    // FUNCTIONALITY
     position: relative;
     perspective: 150rem;
     -moz-perspective: 150rem;
-    height: 50rem;
+    height: 30rem;
 
     // .card:hove .card__side{}
     
     &__side{
         color: $color-white;
         font-size: 2rem;
-        height: 50rem;
+        height: 30rem;
         width: 100%;
 
         backface-visibility: hidden;
@@ -20,6 +21,7 @@
         left: 0;
 
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        overflow: hidden;
         border-radius: .3rem;
 
 
@@ -32,17 +34,93 @@
             transform: rotateY(180deg);
 
             &-1{
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+
+            &--2{
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark); 
+            }
+
+            &--3{
+                background-image: linear-gradient(to right bottom, $color-quaternary-dark-1, $color-quaternary-dark-2); 
             }
 
         }
     }
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {
         transform: rotateY(0);
     }
+
+    // FRONT SIDE STYLING
+    &__picture{
+        background-size: cover;
+        height: 30rem;
+        background-blend-mode: screen;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
+            url(../img/waterdrop.png);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+            url(../img/restaurant1.png);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-quaternary-dark-1, $color-quaternary-dark-2), 
+            url(../img/OmniFood.png);
+        }
+    }
+
+    // BACK SIDE STYLING
+
+    &__cta {
+        @include absCenter;
+        width: 80%;
+    }
+
+    &__heading{
+        
+        letter-spacing: .3rem;
+        
+
+        .heading-tertiary{
+            font-weight: 400;
+            font-size: 1.8rem !important;
+        }
+    }
+
+    &__details {
+
+        ul {
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                font-size: 1.5rem;
+                padding: .5rem;
+
+                
+            }
+        }
+    }
+
+     
+    
+
+    
+    
 }
+
+
+/*
+  
+    
+    
+    */
