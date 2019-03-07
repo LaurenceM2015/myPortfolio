@@ -35,8 +35,8 @@ In this section has a background video, with an overlay on top and animated hero
 Adding and styling the iconmoon, use of the card box shadow, 
 I have also made some modification on typography, grid, and utilities files.
 
-// SECTION PROCESS
-Added new icon and create 3 box.
+   
+    Note: Moved Portfolio section below Feature section.
 
 
 // SECTION FOUR Portfolio 
@@ -45,8 +45,16 @@ Added new icon and create 3 box.
     side one: image with a bkg blanded mode.
     side two: Portfolio title with a an call on action button
     
-    Note: Remove card picture background image.
 
- 
+// SECTION PROCESS
+Added new icon and create 3 box.
 
 
+ Note: Remove card picture background image.
+
+
+
+
+
+
+ 2: CSS3 Pop Up box for Portfolio with a big hero image and description. 

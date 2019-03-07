@@ -9,6 +9,12 @@
 
    
 
+    &__box{
+        display: table-cell;
+    }
+
+   
+
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
     }
@@ -19,6 +25,8 @@
         fill: var(--color-primary, --color-primary-dark);
     }
 }
+
+
 
 
 

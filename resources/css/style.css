@@ -400,6 +400,8 @@ h1, h2, h3, h4 {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s;
   height: auto; }
+  .feature-box__box {
+    display: table-cell; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__icon {
