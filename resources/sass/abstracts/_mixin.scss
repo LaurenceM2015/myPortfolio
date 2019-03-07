@@ -16,11 +16,15 @@
 
 // BOX SHADOW MIXINS
 
-@mixin box-shadow($params) {
-    -webkit-box-shadow: $params;
-    -moz-box-shadow: $params;
-    box-shadow: $params;
+
+
+  @mixin boxShadow($top, $left, $blur, $color, $inset:"") {
+
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
   }
+
 
 // COSTUM MEDIA QUERY MANAGER.
 

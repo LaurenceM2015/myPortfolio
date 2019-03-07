@@ -47,6 +47,4 @@ Added new icon and create 3 box.
     
     Note: Remove card picture background image.
 
- 
-
-
+ 2: CSS3 Pop Up box for Portfolio with a big hero image and description. 
