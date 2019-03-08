@@ -39,5 +39,4 @@ In this section has a background video, with an overlay on top and animated hero
  
 
  2: CSS3 Pop Up box for Portfolio with a big hero image and description. 
- 3: CSS3 Pop Up box functionality.
-
+ 3: CSS3 Pop Up box functionality. Made some modifications.
