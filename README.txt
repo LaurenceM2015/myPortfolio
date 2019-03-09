@@ -42,3 +42,8 @@ In this section has a background video, with an overlay on top and animated hero
 1: box one with profile image, With socials skills icon, 
 and box two a simple text paragraph with skills svg icon to the bottom. 
 And a Call Action button at the end. 
+
+// CONTACT ME SECTION
+1: Contact section has a background linear-gradient, from the to right bottom, 
+2: The contact form box has a bkg image, with a linear-gradient. 
+3: With an animated input-placeholder pseudo-element

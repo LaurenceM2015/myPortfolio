@@ -118,6 +118,9 @@ a:hover,
 a:active {
   outline: 0; }
 
+input, textarea {
+  border: none; }
+
 img {
   max-width: 100%; }
 
@@ -266,7 +269,8 @@ h2, h3, h4 {
     margin-right: 1.5rem; }
 
 .about-box__icon {
-  width: 5rem; }
+  width: 5rem;
+  height: 5rem; }
 
 .bg-video {
   position: absolute;
@@ -442,6 +446,54 @@ h2, h3, h4 {
     height: 4rem;
     width: 4rem;
     fill: var(--color-primary, --color-primary-dark); }
+
+.form__group:not(:last-child) {
+  margin-bottom: .5rem; }
+
+.form__input {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: .3rem solid transparent;
+  font-family: inherit;
+  color: inherit;
+  display: block;
+  padding: 1.5rem 2rem;
+  border-radius: .2rem;
+  font-size: 1.5rem;
+  width: 100%; }
+  .form__input::-webkit-input-placeholder {
+    color: #6c757d; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 0.3rem solid #18BC9C; }
+  .form__input:focus:invalid {
+    border-bottom: 0.3rem solid #f4623a; }
+
+.form__textarea {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.5rem !important; }
+  .form__textarea:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 0.3rem solid #18BC9C; }
+  .form__textarea::-webkit-input-placeholder {
+    color: #6c757d; }
+  .form__textarea:focus:invalid {
+    border-bottom: 0.3rem solid #f4623a; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label, .form__textarea:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .popup {
   padding: 1rem;
@@ -750,5 +802,17 @@ h2, h3, h4 {
   background-color: #f4f4f4; }
 
 .section-process {
-  background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.7), rgba(0, 0, 0, 0.7)), url(img/bkg-img2-min.jpg);
+  background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
   background-size: cover; }
+
+.section-contact {
+  background-image: linear-gradient(to right bottom, #7ed56f, #15a589); }
+
+.contact {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(img/bkg-img2-min.jpg);
+  background-size: cover;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: .3rem; }
+  .contact__form {
+    width: 50%;
+    padding: 6rem; }
