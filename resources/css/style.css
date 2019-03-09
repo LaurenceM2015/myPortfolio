@@ -22,7 +22,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --color-secondary: #2C3E50;
   --color-secondary-dark: #273748;
   --color-tertiary-light: #2998ff;
-  --color-tertiary-dark: #5643fa; }
+  --color-tertiary-dark: #5643fa;
+  --color-facebook: #3b5998;
+  --color-twitter: #00aced;
+  --color-instagram: #517fa4;
+  --color-google-plus:#517fa4;
+  --color-linkedin: #007bb6;
+  --color-github: #040204; }
 
 @keyframes moveInLeft {
   0% {
@@ -74,7 +80,8 @@ html {
 
 body {
   box-sizing: border-box;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  background-color: #fff; }
 
 ::selection {
   background-color: #18BC9C;
@@ -128,13 +135,11 @@ body {
 
 h1, h2 {
   text-transform: uppercase;
+  text-align: center !important;
   font-weight: 700; }
 
 h2, h3, h4 {
   color: #2C3E50; }
-
-h1, h2, h3, h4 {
-  text-align: center !important; }
 
 .heading-primary {
   color: #fff;
@@ -185,8 +190,13 @@ h1, h2, h3, h4 {
 
 .heading-tertiary {
   text-transform: capitalize;
+  color: #2C3E50;
   font-size: 1.8rem;
   font-weight: 700; }
+  .heading-tertiary__sub {
+    font-style: italic;
+    margin-left: 1rem;
+    font-size: 1.5rem; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -213,6 +223,9 @@ h1, h2, h3, h4 {
 
 .u-right-text {
   text-align: right !important; }
+
+.u-text-muted {
+  color: #6c757d !important; }
 
 .u-text-white {
   color: #fff !important; }
@@ -246,6 +259,14 @@ h1, h2, h3, h4 {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.about-box__item {
+  display: inline-block; }
+  .about-box__item:not(:last-child) {
+    margin-right: 1.5rem; }
+
+.about-box__icon {
+  width: 5rem; }
 
 .bg-video {
   position: absolute;
@@ -488,6 +509,20 @@ h1, h2, h3, h4 {
     padding: .5rem; }
     .process-box__item:not(:last-child) {
       border-bottom: 1px solid #f8f9fa; }
+
+.social-box__icon {
+  fill: var(--color-secondary, --color-secondary-dark);
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem; }
+  .social-box__icon--twitter:hover {
+    fill: var(--color-twitter); }
+  .social-box__icon--linkedin:hover {
+    fill: var(--color-linkedin); }
+  .social-box__icon--github:hover {
+    fill: var(--color-github); }
+  .social-box__icon--facebook:hover {
+    fill: var(--color-facebook); }
 
 .container {
   width: 100%;

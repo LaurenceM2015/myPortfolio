@@ -1,0 +1,23 @@
+.social-box{
+    
+    &__icon{
+        fill: var(--color-secondary, --color-secondary-dark);
+        cursor: pointer;
+        height: 3rem;
+        width: 3rem;
+
+        &--twitter {&:hover{fill: var(--color-twitter);}}
+
+        &--linkedin{&:hover{fill: var(--color-linkedin);}}
+
+        &--github{&:hover{fill: var(--color-github);}}
+
+        &--facebook{&:hover{fill: var(--color-facebook);}}
+    }
+
+    
+
+    
+
+    
+}
