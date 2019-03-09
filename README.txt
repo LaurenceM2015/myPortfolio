@@ -39,3 +39,6 @@ In this section has a background video, with an overlay on top and animated hero
  3: CSS3 Pop Up box functionality. Made some modifications.
 
 // ABOUT ME SECTION
+1: box one with profile image, With socials skills icon, 
+and box two a simple text paragraph with skills svg icon to the bottom. 
+And a Call Action button at the end. 
