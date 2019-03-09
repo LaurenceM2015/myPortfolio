@@ -60,6 +60,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
+  scroll-behavior: smooth;
   font-size: 50%; }
   @media (min-width: 56.25em) {
     html {
