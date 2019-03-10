@@ -1,16 +1,26 @@
 .navigation{
-    position: relative;
+   
+
+    @include respond(tab-port){
+
+        background-color: rgba($color-secondary, .7);
+        padding: 3rem;
+
+        position: fixed;
+        width: 100%;
+         z-index: 1800;
+    }
 
     // NAVIGATION Logo
     &__logo-box {
         position: absolute;
-        top: 5rem;
+        top: 2rem;
         left: 3rem;
         z-index: 100;
 
         @include respond(tab-port){
-            top: 2rem;
-            left: 3rem;
+            
+            
         }
     }
 
@@ -23,10 +33,16 @@
         color: $color-white;
         letter-spacing: .1rem;
         font-weight: 700;
-        font-size: 100%;
+        font-size: 3rem;
 
         -webkit-transition: font-size .3s;
         transition: font-size .3s;
+
+        @include respond(tab-port){
+            margin-top: -1rem;
+            font-size: 2.5rem;
+           
+        }
        
     }
     
@@ -85,7 +101,7 @@
         width: 7rem;
 
         position: fixed;
-        top: 3rem;
+        top: 2rem;
         right: 3rem;
         z-index: 2000;
 
@@ -120,7 +136,7 @@
 
     &__background{
         position: fixed;
-        top: 3.5rem;
+        top: 2.5rem;
         right: 3.5rem;
         z-index: 1000;
 
