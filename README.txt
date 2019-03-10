@@ -51,3 +51,8 @@ And a Call Action button at the end.
 
 // FOOTER SECTION
 1: Footer Nav with an animate links with a social link on the right side of page. And copyright on the bottom.
+
+// WRITTIN MEDIA QUERY BREAKPOINTS.
+ORDER Base, Typography, general layout, and grid, page layout, components.
+1: Fixed Mixin and grid layout breakpoints.
+
