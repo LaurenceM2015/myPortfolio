@@ -50,7 +50,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 @mixin respond($breakpoint) {
 
-   
+    // 600px / 16 = 37.5em
+    @if $breakpoint == phone {
+        @media (min-width: 37.5em) { @content };
+    }
 
     @if $breakpoint == tab-port {
         // @media (min-width: 75em) { @content };

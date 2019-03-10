@@ -31,6 +31,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --color-linkedin: #007bb6;
   --color-github: #040204; }
 
+/* GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
