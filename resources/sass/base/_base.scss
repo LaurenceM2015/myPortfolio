@@ -8,21 +8,21 @@
 
 html{
     scroll-behavior: smooth;
-    // This defines what 1rem is
     
-    //1 rem = 10px; 10px/16px = 62.5% font-size: 62.5%; 
 
     font-size: 50%; // 8px / 16 = 0.5
 
-   // 900px / 16 = 56.25em
-    @include respond(tab-port) {
+  
+    @include respond(tab-land) { // 800 / 16 = 50
         font-size: 62.5%; // 10px / 16px = 62.5
     }
 
-    // 1200px / 16 = 75em
+   /* // 1200px / 16 = 75em
     @include respond(tab-land) {
-        font-size: 80%;
+       // font-size: 80%;
     }
+
+    */
 
     // 1800px / 16px = 112.5em
     @include respond(big-desktop) {
