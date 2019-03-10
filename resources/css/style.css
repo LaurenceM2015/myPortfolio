@@ -573,7 +573,10 @@ h2, h3, h4 {
   cursor: pointer;
   height: 3rem;
   width: 3rem; }
-  .social-box__icon--googleples:hover {
+  .social-box__icon--googleplus, .social-box__icon--twitter, .social-box__icon--linkedin, .social-box__icon--github, .social-box__icon--facebook {
+    -webkit-transition: color .2s;
+    transition: color .2s; }
+  .social-box__icon--googleplus:hover {
     fill: var(--color-google-plus); }
   .social-box__icon--twitter:hover {
     fill: var(--color-twitter); }
