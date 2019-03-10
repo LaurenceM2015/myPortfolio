@@ -682,7 +682,7 @@ h2, h3, h4 {
       width: calc( 3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); } }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(to left bottom, rgba(41, 152, 255, 0.5) 50%, rgba(126, 213, 111, 0.5));
   position: relative;
   height: 100vh; }
   .header__text-box {

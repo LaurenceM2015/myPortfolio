@@ -30,8 +30,6 @@ In this section has a background video, with an overlay on top and animated hero
 1: Adding a background video and changed logo and link list color.
 
 
-
-
  Note: Remove card picture background image.
 
 
@@ -55,4 +53,8 @@ And a Call Action button at the end.
 // WRITTIN MEDIA QUERY BREAKPOINTS.
 ORDER Base, Typography, general layout, and grid, page layout, components.
 1: Fixed Mixin and grid layout breakpoints.
+
+
+// Make changes here.
+Change the linear gradient color 
 

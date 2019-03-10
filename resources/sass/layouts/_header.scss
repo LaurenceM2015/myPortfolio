@@ -1,9 +1,10 @@
 // ALL OF THE HEADER 
 .header{
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-black, 0.7),
-        rgba($color-black, 0.8));
+    //linear-gradient(to right bottom, rgba($color-black, 0.7), rgba($color-black, 0.8));
+    background-image: linear-gradient( to left bottom, 
+                       rgba($color-tertiary-light, 0.5) 50%, 
+                       rgba($color-primary-light, 0.5));
+    
     position: relative;
     height: 100vh;
 
