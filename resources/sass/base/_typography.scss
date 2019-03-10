@@ -32,27 +32,34 @@ h2, h3, h4{color: $color-secondary;}
         font-weight: 700;
         letter-spacing: 1rem;
         padding-bottom: 1rem;
+
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
     
         // animation testing
-        animation: moveInLeft 1s ease-out;
-        /*
-        animation-timing-function: ease-in;
-        animation-name: moveInLeft;
-        animation-duration: 5s;
-        */
+        //animation: moveInLeft 1s ease-out;
 
         /*
         animation-delay: 3s;
         animation-iteration-count: 3;
         */
+
+        @include respond(tab-port){
+            font-size: 6rem;
+            line-height: 4rem;
+            
+            
+        }
     }
 
     &--sub {
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-family: Lato;
         font-weight: 500;
-        letter-spacing: .5rem;
+        letter-spacing: .2rem;
+       
 
         // animation testing
         animation: moveInRight 1s ease-out;
@@ -62,8 +69,9 @@ h2, h3, h4{color: $color-secondary;}
         animation-duration: 5s;
         */
 
-        @include respond(phone) {
-            
+        @include respond(tab-port) {
+            letter-spacing: .5rem;
+            font-size: 2rem;
         }
     }
 }

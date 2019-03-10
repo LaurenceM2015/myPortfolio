@@ -166,28 +166,33 @@ h2, h3, h4 {
     font-weight: 700;
     letter-spacing: 1rem;
     padding-bottom: 1rem;
-    animation: moveInLeft 1s ease-out;
-    /*
-        animation-timing-function: ease-in;
-        animation-name: moveInLeft;
-        animation-duration: 5s;
-        */
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
     /*
         animation-delay: 3s;
         animation-iteration-count: 3;
         */ }
+    @media (min-width: 50em) {
+      .heading-primary--main {
+        font-size: 6rem;
+        line-height: 4rem; } }
   .heading-primary--sub {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: Lato;
     font-weight: 500;
-    letter-spacing: .5rem;
+    letter-spacing: .2rem;
     animation: moveInRight 1s ease-out;
     /*
         animation-timing-function: ease-in;
         animation-name: moveInRight;
         animation-duration: 5s;
         */ }
+    @media (min-width: 50em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem;
+        font-size: 2rem; } }
 
 .heading-secondary {
   background-image: linear-gradient(to right, #7ed56f, #15a589);
