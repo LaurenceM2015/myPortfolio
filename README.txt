@@ -47,3 +47,7 @@ And a Call Action button at the end.
 1: Contact section has a background linear-gradient, from the to right bottom, 
 2: The contact form box has a bkg image, with a linear-gradient. 
 3: With an animated input-placeholder pseudo-element
+
+
+// FOOTER SECTION
+1: Footer Nav with an animate links with a social link on the right side of page. And copyright on the bottom.
