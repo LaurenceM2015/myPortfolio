@@ -58,3 +58,8 @@ ORDER Base, Typography, general layout, and grid, page layout, components.
 // Make changes here.
 Change the linear gradient color 
 
+// RESET MAIN NAVIGATION 
+modified main navigation with a background color of color back with the opacity .7. 
+
+
+
