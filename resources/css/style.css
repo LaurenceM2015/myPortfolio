@@ -27,7 +27,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --color-facebook: #3b5998;
   --color-twitter: #00aced;
   --color-instagram: #517fa4;
-  --color-google-plus:#517fa4;
+  --color-google-plus:#dd4b39;
   --color-linkedin: #007bb6;
   --color-github: #040204; }
 
@@ -573,6 +573,8 @@ h2, h3, h4 {
   cursor: pointer;
   height: 3rem;
   width: 3rem; }
+  .social-box__icon--googleples:hover {
+    fill: var(--color-google-plus); }
   .social-box__icon--twitter:hover {
     fill: var(--color-twitter); }
   .social-box__icon--linkedin:hover {
@@ -584,41 +586,35 @@ h2, h3, h4 {
 
 .footer {
   color: #f8f9fa;
-  font-size: 1.4rem; }
+  font-size: 1rem; }
   .footer--1 {
-    padding-top: 3rem;
+    padding: 3rem 0;
     background-color: #2C3E50; }
   .footer--2 {
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: #273748; }
   .footer__logo {
     width: 15rem;
     height: 5.5rem; }
   .footer__navigation {
-    border-top: 0.1rem solid #f8f9fa;
-    display: inline-block;
-    padding-top: 2rem; }
+    display: inline-block; }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
   .footer svg {
     fill: var(--color-white); }
-  .footer__link:link, .footer__link:visited {
-    color: #f8f9fa;
-    text-transform: uppercase;
-    display: inline-block;
-    transition: all .2s; }
-  .footer__link:hover, .footer__link:active {
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    color: #18BC9C;
-    padding: .5rem;
-    transform: rotate(5deg) scale(1.3); }
-  .footer__details {
-    border-top: 0.1rem solid #f8f9fa;
-    display: inline-block;
-    padding-top: 2rem;
-    width: 80%; }
+  .footer__link {
+    padding: .5rem; }
+    .footer__link:link, .footer__link:visited {
+      color: #f8f9fa;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all .2s; }
+    .footer__link:hover, .footer__link:active {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      color: #18BC9C;
+      transform: rotate(5deg) scale(1.3); }
 
 .container {
   width: 100%;

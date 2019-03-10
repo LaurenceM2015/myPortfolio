@@ -14,9 +14,13 @@
         height: 3rem;
         width: 3rem;
 
+        &--googleples {&:hover{fill: var(--color-google-plus);}}
+
         &--twitter {&:hover{fill: var(--color-twitter);}}
 
         &--linkedin{&:hover{fill: var(--color-linkedin);}}
+
+        
 
         &--github{&:hover{fill: var(--color-github);}}
 
