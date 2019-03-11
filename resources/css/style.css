@@ -209,20 +209,20 @@ h2, h3, h4 {
 .heading-tertiary {
   text-transform: capitalize;
   color: #2C3E50;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700; }
+  @media (min-width: 50em) {
+    .heading-tertiary {
+      font-size: 2.5rem; } }
   .heading-tertiary__sub {
     font-style: italic;
     margin-left: 1rem;
-    font-size: 1.5rem; }
+    font-size: 1.6rem; }
 
 .paragraph {
-  font-size: 2rem; }
+  font-size: 1.8rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
-  @media (min-width: 50em) {
-    .paragraph {
-      font-size: 1.6rem; } }
 
 .long-copy {
   width: 80%;
@@ -280,6 +280,9 @@ h2, h3, h4 {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.about-box__heading {
+  margin-top: -1rem; }
 
 .about-box__item {
   display: inline-block; }

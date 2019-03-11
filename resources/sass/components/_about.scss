@@ -1,5 +1,9 @@
 .about-box{
 
+    &__heading{ 
+        margin-top: -1rem;
+    }
+
     &__item{
         display: inline-block;
 

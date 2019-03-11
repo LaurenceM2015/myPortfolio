@@ -97,26 +97,31 @@ h2, h3, h4{color: $color-secondary;}
 .heading-tertiary {
     text-transform: capitalize;
     color: $color-secondary;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
+
+    @include respond(tab-port){
+
+       font-size: 2.5rem;
+    }
 
     &__sub{
         font-style: italic;
         margin-left: 1rem;
-        font-size: 1.5rem;
+        font-size: $default-font-size;
     }
     
 }
 
 .paragraph {
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
 
     @include respond(tab-port){
-        font-size: $default-font-size;
+       
     }
 }
 
