@@ -109,10 +109,14 @@ h2, h3, h4{color: $color-secondary;}
 }
 
 .paragraph {
-    font-size: $default-font-size;
+    font-size: 2rem;
 
     &:not(:last-child) {
         margin-bottom: 3rem;
+    }
+
+    @include respond(tab-port){
+        font-size: $default-font-size;
     }
 }
 

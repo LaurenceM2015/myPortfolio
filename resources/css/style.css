@@ -217,9 +217,12 @@ h2, h3, h4 {
     font-size: 1.5rem; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 2rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+  @media (min-width: 50em) {
+    .paragraph {
+      font-size: 1.6rem; } }
 
 .long-copy {
   width: 80%;
@@ -447,7 +450,6 @@ h2, h3, h4 {
     */
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
   padding: 2.5rem;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
