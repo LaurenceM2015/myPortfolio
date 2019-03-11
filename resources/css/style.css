@@ -81,7 +81,7 @@ html {
     }
 
     */ }
-  @media (min-width: 56.25em) {
+  @media (min-width: 62.5em) {
     html {
       font-size: 62.5%; } }
   @media (min-width: 112.5em) {
@@ -209,18 +209,15 @@ h2, h3, h4 {
 .heading-tertiary {
   text-transform: capitalize;
   color: #2C3E50;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700; }
-  @media (min-width: 50em) {
-    .heading-tertiary {
-      font-size: 2.5rem; } }
   .heading-tertiary__sub {
     font-style: italic;
     margin-left: 1rem;
-    font-size: 1.6rem; }
+    font-size: 1.5rem; }
 
 .paragraph {
-  font-size: 1.8rem; }
+  font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -661,7 +658,7 @@ h2, h3, h4 {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 1.5rem; }
-    @media (min-width: 56.25em) {
+    @media (min-width: 62.5em) {
       .row:not(:last-child) {
         margin-bottom: 4rem; } }
   .row::after {
@@ -672,10 +669,10 @@ h2, h3, h4 {
     float: left;
     width: 100%;
     margin-bottom: 4rem; }
-    @media (min-width: 56.25em) {
+    @media (min-width: 62.5em) {
       .row [class^="col-"]:not(:last-child) {
         margin-right: 2rem; } }
-  @media (min-width: 56.25em) {
+  @media (min-width: 62.5em) {
     .row .col-1-of-2 {
       width: calc((100% - 2rem) / 2); }
     .row .col-1-of-3 {
