@@ -1,29 +1,63 @@
 .card {
 
     // FUNCTIONALITY
-    perspective: 150rem;
-    -moz-perspective: 150rem;
-    position: relative;
-    height: 40rem;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    height: auto;
+    
+
+    @include respond(tab-land){
+        perspective: 150rem;
+        -moz-perspective: 150rem;
+        position: relative;
+
+        box-shadow: none;
+        //height: 40rem;
+        height: 52rem;
+    }
     
     &__side {
-        height: 40rem;
-        transition: all .8s ease;
-        position: absolute;
+        box-shadow: none;
+        height: auto;
+        
+        
+        position: relative;
         top: 0;
         left: 0;
         width: 100%;
-        backface-visibility: hidden;
-        border-radius: 3px;
-        overflow: hidden;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        
+        
+
+        @include respond(tab-land){
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+            overflow: hidden;
+            //height: 40rem;
+            height: 52rem;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            transition: all .8s ease;
+            backface-visibility: hidden;
+
+
+        }
 
         &--front {
             background-color: $color-white;
         }
 
         &--back {
-            transform: rotateY(180deg);
+            transform: rotateY(0);
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+
+            @include respond(tab-land){
+                transform: rotateY(180deg); 
+                
+            }
 
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
@@ -36,12 +70,16 @@
             &-3 {
                 background-image: linear-gradient(to right bottom, $color-quaternary-dark-1, $color-quaternary-dark-2);
             }
+
+
         }
     }
   
 
     &:hover &__side--front {
-        transform: rotateY(-180deg);
+        transform: rotateY(0);
+
+        @include respond(tab-land){transform: rotateY(-180deg);}
     }
 
     &:hover &__side--back {
@@ -113,9 +151,12 @@
     }
 
     &__details {
-        padding: 3rem;
+
+        padding: 4.5rem 3rem;        
         width: 85%;
         margin: 0 auto;
+
+        @include respond(tab-land){ padding:3rem;}
 
         p{
             text-align: center;
@@ -126,18 +167,35 @@
 
     // FRONT SIDE STYLING
     &__cta {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+
+        
+        padding: 7rem 4rem 4rem 4rem;
         text-align: center;
+        width: 100%;
+
+       
+
+        @include respond(tab-land){
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            padding: 4rem;
+            width: 90%;
+        }
     }
 
     &__price-box {
         text-align: center;
         color: $color-white;
-        margin-bottom: 8rem;
+        margin-bottom: 3rem;
+
+        @include respond(tab-land){ margin-bottom: 8rem;}
     }
 
     &__price-only {
@@ -151,5 +209,12 @@
     }
 
     // MIDIA QUERY
+    @include respond(tab-port){
+
+    }
+
+    @include respond(tab-land){
+        
+    }
     
 }

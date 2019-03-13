@@ -372,25 +372,41 @@ h2, h3, h4 {
   transform: translateY(0); }
 
 .card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
-  height: 40rem; }
+  background-color: #fff;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  height: auto; }
+  @media (min-width: 62.5em) {
+    .card {
+      perspective: 150rem;
+      -moz-perspective: 150rem;
+      position: relative;
+      box-shadow: none;
+      height: 52rem; } }
   .card__side {
-    height: 40rem;
-    transition: all .8s ease;
-    position: absolute;
+    box-shadow: none;
+    height: auto;
+    position: relative;
     top: 0;
     left: 0;
-    width: 100%;
-    backface-visibility: hidden;
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    width: 100%; }
+    @media (min-width: 62.5em) {
+      .card__side {
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        height: 52rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .8s ease;
+        backface-visibility: hidden; } }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
-      transform: rotateY(180deg); }
+      transform: rotateY(0);
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+      @media (min-width: 62.5em) {
+        .card__side--back {
+          transform: rotateY(180deg); } }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
       .card__side--back-2 {
@@ -398,7 +414,10 @@ h2, h3, h4 {
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #ff7730, #f4623a); }
   .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
+    transform: rotateY(0); }
+    @media (min-width: 62.5em) {
+      .card:hover .card__side--front {
+        transform: rotateY(-180deg); } }
   .card:hover .card__side--back {
     transform: rotateY(0); }
   .card__picture {
@@ -436,24 +455,39 @@ h2, h3, h4 {
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(253, 204, 82, 0.85), rgba(253, 197, 57, 0.85)); }
   .card__details {
-    padding: 3rem;
+    padding: 4.5rem 3rem;
     width: 85%;
     margin: 0 auto; }
+    @media (min-width: 62.5em) {
+      .card__details {
+        padding: 3rem; } }
     .card__details p {
       text-align: center;
       font-size: 1.5rem;
       padding: 1rem; }
   .card__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center; }
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    padding: 7rem 4rem 4rem 4rem;
+    text-align: center;
+    width: 100%; }
+    @media (min-width: 62.5em) {
+      .card__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 4rem;
+        width: 90%; } }
   .card__price-box {
     text-align: center;
     color: #fff;
-    margin-bottom: 8rem; }
+    margin-bottom: 3rem; }
+    @media (min-width: 62.5em) {
+      .card__price-box {
+        margin-bottom: 8rem; } }
   .card__price-only {
     font-size: 1.4rem;
     text-transform: uppercase; }

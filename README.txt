@@ -65,9 +65,16 @@ modified main navigation with a background color of color back with the opacity 
 
 // MEDIA QUERY BY SECTIONS.
 Portfolio Card Section.
-
+Part one:
 Changed the front side of the Portfolio rotated card, with a CSS perspertive, backface visibility, 
-backround blend modes, and box decoration break.
+backround blend modes, and box decoration break. 
+
+Part Two:
+
+Card Media Query for bigest tablets. Change the back side to look only one side. 
+
+
+ 
 
 
 
