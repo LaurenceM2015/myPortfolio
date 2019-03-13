@@ -33,14 +33,14 @@
         color: $color-white;
         letter-spacing: .1rem;
         font-weight: 700;
-        font-size: 3rem;
+       
 
         -webkit-transition: font-size .3s;
         transition: font-size .3s;
 
         @include respond(tab-port){
             margin-top: -1rem;
-            font-size: 2.5rem;
+            
            
         }
        
@@ -198,7 +198,8 @@
 
 
     &__item {
-        margin: 1rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
         
         @include respond(tab-port){
             display: inline-block;
@@ -216,7 +217,7 @@
              color: $color-white;
              padding: 1rem 2rem;
              font-weight: 300;
-             font-size: 3rem;
+             
  
              background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
              background-size: 230%;
@@ -227,7 +228,7 @@
                 //color: $color-secondary; 
                 color: $color-white;
                 padding: 1rem;
-                font-size: 1.5rem;
+              
              }
          }
  

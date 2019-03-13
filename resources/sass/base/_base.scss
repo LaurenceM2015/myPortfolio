@@ -8,25 +8,26 @@
 
 html{
     scroll-behavior: smooth;
-    
+    font-size: 62.5%; // 10px / 16px = 0.625
 
-    font-size: 50%; // 8px / 16 = 0.5
+   
 
   
-    @include respond(tab-land) { // 800 / 16 = 50
-        font-size: 62.5%; // 10px / 16px = 62.5
+    // 800px min
+   @include respond(tab-port ) { 
+    font-size: 68.75%; // 11px / 16px = 6875
     }
 
-   /* // 1200px / 16 = 75em
+    // width < 900 
     @include respond(tab-land) {
-       // font-size: 80%;
+        font-size: 75%; // 12/16 = 0.75%
     }
 
-    */
+  
 
     // 1800px / 16px = 112.5em
     @include respond(big-desktop) {
-        font-size: 100%;
+        font-size: 87.5%; // 1rem  14 /16= 0.875
     }
 
      
