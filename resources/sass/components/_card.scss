@@ -1,52 +1,44 @@
 .card {
+
     // FUNCTIONALITY
-    position: relative;
     perspective: 150rem;
     -moz-perspective: 150rem;
-    height: 30rem;
-
-    // .card:hove .card__side{}
+    position: relative;
+    height: 40rem;
     
-    &__side{
-        color: $color-white;
-        font-size: 2rem;
-        height: 30rem;
-        width: 100%;
-
-        backface-visibility: hidden;
+    &__side {
+        height: 40rem;
         transition: all .8s ease;
-
         position: absolute;
         top: 0;
         left: 0;
-
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
         overflow: hidden;
-        border-radius: .3rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
-
-
-        &--font{
+        &--front {
             background-color: $color-white;
         }
 
-        &--back{
+        &--back {
             transform: rotateY(180deg);
 
-            &--1{
+            &-1 {
                 background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
             }
 
-            &--2{
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark); 
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
             }
 
-            &--3{
-                background-image: linear-gradient(to right bottom, $color-quaternary-dark-1, $color-quaternary-dark-2); 
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-quaternary-dark-1, $color-quaternary-dark-2);
             }
-
         }
     }
+  
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
@@ -56,87 +48,108 @@
         transform: rotateY(0);
     }
 
-    &__img{
-        height: 100%;
-    }
 
-    &__overlay{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
         &--1 {
-            // background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-            background-image:  linear-gradient(rgba($color-tertiary-light, 0.4), rgba($color-tertiary-dark, 0.4));
+            background-image: linear-gradient(to right bottom, $color-secondary, $color-tertiary-light), 
+            url(../img/waterdrop-min.png);
         }
 
         &--2 {
-             
-            background-image:  linear-gradient(rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.4));
-           
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+            url(../img/RestFrankHero.png);
         }
 
         &--3 {
-            background-image: linear-gradient(rgba($color-quaternary-dark-1, 0.4), rgba($color-quaternary-dark-2, 0.4));
+            background-image: linear-gradient(to right bottom, $color-quaternary-dark-2, $color-quaternary-dark-2), 
+            url(../img/ominFoodHero.png);
         }
     }
 
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
     
-
-    // FRONT SIDE STYLING
-    &__picture{
-        background-size: cover;
-        height: 30rem;
-       
     }
 
-    // BACK SIDE STYLING
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
 
-    &__cta {
-        @include absCenter;
-        width: 80%;
-    }
+        &--1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-secondary, .85), 
+            rgba($color-secondary-dark, .85));
+        }
 
-    &__heading{
-        
-        letter-spacing: .3rem;
-        
+        &--2 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-primary-light, .85), 
+            rgba($color-primary-dark, .85));
+        }
 
-        .heading-tertiary{
-            font-weight: 400;
-            font-size: 1.8rem !important;
+        &--3 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-quaternary-light-1, .85), 
+            rgba($color-quaternary-light-2, .85));
         }
     }
 
     &__details {
+        padding: 3rem;
+        width: 85%;
+        margin: 0 auto;
 
-        ul {
-            width: 80%;
-            margin: 0 auto;
-
-            li {
-                font-size: 1.5rem;
-                padding: .5rem;
-
-                
-            }
+        p{
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
         }
     }
 
-     
-    
+    // FRONT SIDE STYLING
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
 
-    
+    &__price-box {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 4rem;
+        font-weight: 100;
+    }
+
+    // MIDIA QUERY
     
 }
-
-
-/*
-  
-    
-    
-    */

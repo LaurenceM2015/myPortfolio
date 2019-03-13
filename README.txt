@@ -63,6 +63,12 @@ modified main navigation with a background color of color back with the opacity 
 
 // Typography part 2: Rewrite the media query manager and the base font size.
 
+// MEDIA QUERY BY SECTIONS.
+Portfolio Card Section.
+
+Changed the front side of the Portfolio rotated card, with a CSS perspertive, backface visibility, 
+backround blend modes, and box decoration break.
+
 
 
 
