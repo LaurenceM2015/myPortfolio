@@ -55,7 +55,8 @@
             clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 
             @include respond(tab-land){
-                transform: rotateY(180deg); 
+                transform: rotateY(180deg);
+                clip-path: none; 
                 
             }
 
