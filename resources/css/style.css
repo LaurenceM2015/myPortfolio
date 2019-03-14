@@ -384,7 +384,7 @@ h2, h3, h4 {
       -moz-perspective: 150rem;
       position: relative;
       box-shadow: none;
-      height: 52rem; } }
+      height: 40rem; } }
   .card__side {
     box-shadow: none;
     height: auto;
@@ -396,7 +396,7 @@ h2, h3, h4 {
       .card__side {
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
         overflow: hidden;
-        height: 52rem;
+        height: 40rem;
         position: absolute;
         top: 0;
         left: 0;
@@ -426,7 +426,7 @@ h2, h3, h4 {
     transform: rotateY(0); }
   .card__picture {
     background-size: cover;
-    height: 23rem;
+    height: 30rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -464,7 +464,7 @@ h2, h3, h4 {
     margin: 0 auto; }
     @media (min-width: 62.5em) {
       .card__details {
-        padding: 3rem; } }
+        padding: 1rem 2rem; } }
     .card__details p {
       text-align: center;
       font-size: 1.5rem;
@@ -483,7 +483,7 @@ h2, h3, h4 {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 4rem;
+        padding: 2rem;
         width: 90%; } }
   .card__price-box {
     text-align: center;
@@ -496,7 +496,7 @@ h2, h3, h4 {
     font-size: 1.4rem;
     text-transform: uppercase; }
   .card__price-value {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 100; }
 
 .composition {
