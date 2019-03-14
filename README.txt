@@ -70,8 +70,15 @@ Changed the front side of the Portfolio rotated card, with a CSS perspertive, ba
 backround blend modes, and box decoration break. 
 
 Part Two:
-
 Card Media Query for bigest tablets. Change the back side to look only one side. 
+
+// PURE CSS3 POP UP MEDOL
+
+1: Part One: header with three image with background clip, 
+    outline offset with outline. 
+    transform all the property.
+
+
 
 
  
