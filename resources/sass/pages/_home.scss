@@ -25,16 +25,27 @@
 
 .contact{
     background-image: linear-gradient(90deg, rgba($color-white, .9) 0%, 
-    rgba($color-white, .9) 50%,
+    rgba($color-white, .9) 100%,
     transparent 50%), url(img/bkg-img2-min.jpg);
     background-size: cover;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
     border-radius: .3rem;
     //height: 50rem;
 
+    @include respond(tab-land){
+        background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, 
+        rgba($color-white, .9) 50%,
+        transparent 50%), url(img/bkg-img2-min.jpg);
+        
+    }
+
     &__form{
-        width: 50%;
+        width: 100%;
         padding: 6rem;
+
+        @include respond(tab-land){
+            width: 50%;
+        }
     }
 
     
