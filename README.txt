@@ -79,7 +79,10 @@ Card Media Query for bigest tablets. Change the back side to look only one side.
     transform all the property.
 
 
+// SMOOTH SCROLLING BEH EFFECT:
 
+NOT WORKING ON THE CHROMIUM, SAFARI AND OTHER AT THIS POINT: 
+LINK FOR CAN I USE <a href="https://caniuse.com/#search=scroll-behavior" rel="nofollow">CAN-I-USE SMOOTH SCROLLING</a>
 
  
 

@@ -73,8 +73,9 @@ $gutter-horizontal: 6rem;
   box-sizing: inherit; }
 
 html {
-  scroll-behavior: smooth;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow: scroll;
+  scroll-behavior: smooth; }
   @media (min-width: 50em) {
     html {
       font-size: 68.75%; } }
@@ -988,6 +989,10 @@ h2, h3, h4 {
   transform: translateX(1rem);
   background-position: 100%;
   color: #18BC9C; }
+
+#landing-page {
+  overflow: scroll;
+  scroll-behavior: smooth; }
 
 .section-features {
   background-color: #f4f4f4; }
