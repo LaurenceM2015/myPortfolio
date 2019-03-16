@@ -281,6 +281,12 @@ h2, h3, h4 {
 .about-box__heading {
   margin-top: -1rem; }
 
+.about-box__boxImg, .about-box__social {
+  text-align: center; }
+  @media (min-width: 62.5em) {
+    .about-box__boxImg, .about-box__social {
+      text-align: left; } }
+
 .about-box__item {
   display: inline-block; }
   .about-box__item:not(:last-child) {
