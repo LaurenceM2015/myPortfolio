@@ -1,4 +1,5 @@
 .footer{
+    text-align: center !important;
     
     color: $color-grey-light-2;
     font-size: 1rem;
@@ -63,13 +64,17 @@
     }
 
    
-    &__details{
-        
-       
-    }
+   
 
     &__copyright{}
 
-    &__social-box{}
+    &__social-box{
+        
+
+        
+        @include respond(tab-land){
+            text-align: right;
+        }
+    }
 }
 
