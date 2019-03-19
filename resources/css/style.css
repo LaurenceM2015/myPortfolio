@@ -1000,6 +1000,10 @@ h2, h3, h4 {
 .section-process {
   background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
   background-size: cover; }
+  @media (min-resolution: 192dpi) and (min-width: 37.5), (min-width: 125em) {
+    .section-process {
+      background-image: linear-gradient(to right bottom, rgba(21, 165, 137, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+      background-size: cover; } }
 
 .section-contact {
   background-image: linear-gradient(to right bottom, #7ed56f, #15a589); }
@@ -1012,6 +1016,12 @@ h2, h3, h4 {
   @media (min-width: 62.5em) {
     .contact {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 50%), url(img/bkg-img2-min.jpg); } }
+  @media (min-resolution: 192dpi) and (min-width: 37.5), (min-width: 125em) {
+    .contact {
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url(img/bkg-img2.jpg);
+      background-size: cover;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+      border-radius: .3rem; } }
   .contact__form {
     width: 100%;
     padding: 6rem; }

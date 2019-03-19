@@ -13,6 +13,17 @@
         rgba($color-black, 0.7)),
     url(img/hero-min.jpg);
     background-size: cover;
+
+    // 192 dot per inch: 600px / 16px = 37.5 and 2000px / 16 = 125em
+    @media (min-resolution:192dpi) and (min-width: 37.5), (min-width: 125em){
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-dark, 0.7),
+            rgba($color-black, 0.7)),
+        url(img/hero.jpg);
+        background-size: cover;
+
+    }
    
 }
 
@@ -28,7 +39,10 @@
 
 
 .section-contact{
-    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+    background-image: linear-gradient(to right bottom, 
+    $color-primary-light, $color-primary-dark)
+
+    
     
 }
 
@@ -46,6 +60,15 @@
         rgba($color-white, .9) 60%,
         transparent 50%), url(img/bkg-img2-min.jpg);
         
+    }
+
+    @media (min-resolution:192dpi) and (min-width: 37.5), (min-width: 125em){
+        background-image: linear-gradient(90deg, rgba($color-white, .9) 0%, 
+        rgba($color-white, .9) 100%,
+        transparent 50%), url(img/bkg-img2.jpg);
+        background-size: cover;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+        border-radius: .3rem;
     }
 
     &__form{

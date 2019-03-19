@@ -87,6 +87,11 @@ LINK FOR CAN I USE <a href="https://caniuse.com/#search=scroll-behavior" rel="no
  
 
 
+// RESPONSIVE IMAGE target Resolution
+1: Resolution Switching:
+2: Density Switching:
+3: Art Direction;
+ 
 
 
 
