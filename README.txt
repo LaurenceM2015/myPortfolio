@@ -92,9 +92,12 @@ LINK FOR CAN I USE <a href="https://caniuse.com/#search=scroll-behavior" rel="no
 2: Density Switching:
 3: Art Direction;
  
+BROWSER SUPPORT:
 
 
+//GRACEFUL DEGRATION with @SUPPORT.
 
+Vendor prexif for the new css3 properties.
 
 // SAFARI -webkit-min-device-pixel-ratio. 
 

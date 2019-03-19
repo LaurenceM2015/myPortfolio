@@ -408,6 +408,7 @@ h2, h3, h4 {
         top: 0;
         left: 0;
         transition: all .8s ease;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden; } }
     .card__side--front {
       background-color: #fff; }
@@ -632,15 +633,20 @@ h2, h3, h4 {
   top: 0;
   left: 0;
   z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100%;
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
   overflow-y: auto;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 100vh;
-  width: 100%; }
+  height: 100%; }
+  @supports (-webkit-backdrop-filter: blur(10px)) {
+    .popup {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3); } }
   .popup__header {
     padding-top: 2rem; }
   .popup__content {
