@@ -96,3 +96,5 @@ LINK FOR CAN I USE <a href="https://caniuse.com/#search=scroll-behavior" rel="no
 
 
 
+// SAFARI -webkit-min-device-pixel-ratio. 
+

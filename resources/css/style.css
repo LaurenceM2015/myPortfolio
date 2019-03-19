@@ -1000,9 +1000,9 @@ h2, h3, h4 {
 .section-process {
   background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
   background-size: cover; }
-  @media (min-resolution: 192dpi) and (min-width: 37.5), (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .section-process {
-      background-image: linear-gradient(to right bottom, rgba(21, 165, 137, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(21, 165, 137, 0.7)), url(img/hero.jpg);
       background-size: cover; } }
 
 .section-contact {
@@ -1016,7 +1016,7 @@ h2, h3, h4 {
   @media (min-width: 62.5em) {
     .contact {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 50%), url(img/bkg-img2-min.jpg); } }
-  @media (min-resolution: 192dpi) and (min-width: 37.5), (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .contact {
       background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url(img/bkg-img2.jpg);
       background-size: cover;
