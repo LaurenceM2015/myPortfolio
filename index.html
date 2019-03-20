@@ -541,7 +541,12 @@
                             <div class="about-box">
                                 
                                 <figure class="about-box__boxImg u-margin-bottom-medium">
-                                    <img class="about-box__img" src="resources/img/profile.jpg" alt="Laurence Malonga">
+                                    <picture class="about-box__img">
+                                        <!-- Art Direction -->
+                                        <source srcset="resources/img/profile-1x.jpg x1, resources/img/profile-2x.jpg 2x" media="(min-width: 50em)">
+                                            <!-- Density Switching -->
+                                        <img srcset="resources/img/profile-1x.jpg x1, resources/img/profile-2x.jpg 2x" alt="Laurence Malonga Profile Image">
+                                    </picture>
                                 </figure>
                                
 

@@ -89,7 +89,7 @@ LINK FOR CAN I USE <a href="https://caniuse.com/#search=scroll-behavior" rel="no
 
 // RESPONSIVE IMAGE target Resolution
 1: Resolution Switching:
-2: Density Switching:
+2: Density Switching: Responsive image in the html using srcset.
 3: Art Direction;
  
 BROWSER SUPPORT:
@@ -106,5 +106,8 @@ Vendor prexif for the new css3 properties.
 2: Card inline bkg image with background-blend-mode: screen, 
 3: Added 3 new projects. 
 4: Replaced inline css background image with img tag.
+
+
+
 
 

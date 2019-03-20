@@ -62,17 +62,7 @@
                 
             }
 
-            &-1 {
-               // background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-            }
-
-            &-2 {
-               // background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            }
-
-            &-3 {
-              //  background-image: linear-gradient(to right bottom, $color-quaternary-dark-1, $color-quaternary-dark-2);
-            }
+        
 
 
         }
@@ -99,10 +89,14 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
-        //background-color: rgba($color-primary-dark, .5);
+        background-color: rgba($color-primary-dark, .5);
+       
     }
 
-    &__img{height: 30rem;}
+    &__img{
+        width: 100%;
+        height: 30rem;
+    }
 
     &__heading {
         font-size: 2.8rem;
