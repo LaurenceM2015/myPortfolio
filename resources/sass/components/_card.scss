@@ -99,15 +99,10 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
-        background-color: rgba($color-primary-dark, .5);
-       
-        
-        &--1 {}
-
-        &--2 {}
-
-        &--3 {}
+        //background-color: rgba($color-primary-dark, .5);
     }
+
+    &__img{height: 30rem;}
 
     &__heading {
         font-size: 2.8rem;
@@ -131,17 +126,7 @@
         rgba($color-primary-light, .85), 
         rgba($color-primary-dark, .85));
 
-        &--1 {
-            
-        }
-
-        &--2 {
-            
-        }
-
-        &--3 {
-            
-        }
+       
     }
 
     &__details {
@@ -156,7 +141,7 @@
         p{
             text-align: center;
             font-size: 1.5rem;
-            padding: 1rem;
+            //padding: 1rem;
         }
     }
 
