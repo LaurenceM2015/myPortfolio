@@ -414,17 +414,12 @@ h2, h3, h4 {
       background-color: #fff; }
     .card__side--back {
       transform: rotateY(0);
-      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      background-image: linear-gradient(to right bottom, #7ed56f, #15a589); }
       @media (min-width: 62.5em) {
         .card__side--back {
           transform: rotateY(180deg);
           clip-path: none; } }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-      .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #15a589); }
-      .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #ff7730, #f4623a); }
   .card:hover .card__side--front {
     transform: rotateY(0); }
     @media (min-width: 62.5em) {
@@ -439,13 +434,8 @@ h2, h3, h4 {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
-    .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #2C3E50, #2998ff), url(../img/waterdrop-min.png); }
-    .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #15a589), url(../img/RestFrankHero.png); }
-    .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #f4623a, #f4623a), url(../img/ominFoodHero.png); }
+    border-top-right-radius: 3px;
+    background-color: rgba(21, 165, 137, 0.5); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -459,13 +449,8 @@ h2, h3, h4 {
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
-    box-decoration-break: clone; }
-    .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.85), rgba(39, 55, 72, 0.85)); }
-    .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(21, 165, 137, 0.85)); }
-    .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(253, 204, 82, 0.85), rgba(253, 197, 57, 0.85)); }
+    box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(21, 165, 137, 0.85)); }
   .card__details {
     padding: 4.5rem 3rem;
     width: 85%;

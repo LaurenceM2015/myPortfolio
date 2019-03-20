@@ -101,3 +101,7 @@ Vendor prexif for the new css3 properties.
 
 // SAFARI -webkit-min-device-pixel-ratio. 
 
+// PORTFOLIO MODIFICATIONS 
+1: Remove css bkg image
+2: Card inline bkg image with background-blend-mode: screen, 
+3: Added 3 new projects. 
