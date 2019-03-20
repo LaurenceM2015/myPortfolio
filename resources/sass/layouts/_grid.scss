@@ -11,10 +11,10 @@
     @include respond(phone){max-width: 60rem;}
 
     // 800px / 16 = 50em
-    @include respond(tab-port){max-width: 72rem;}
+    //@include respond(tab-port){max-width: 72rem;}
    
 
-     // 900px / 16 = 56.25em
+     // 1000px / 16 = 56.25em
     @include respond(tab-land){max-width: 96rem;}
 
     // 1200px / 16 = 75em

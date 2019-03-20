@@ -761,9 +761,6 @@ h2, h3, h4 {
   @media (min-width: 37.5em) {
     .container {
       max-width: 60rem; } }
-  @media (min-width: 50em) {
-    .container {
-      max-width: 72rem; } }
   @media (min-width: 62.5em) {
     .container {
       max-width: 96rem; } }
