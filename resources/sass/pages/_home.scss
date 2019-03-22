@@ -15,7 +15,7 @@
     background-size: cover;
 
     // 192 dot per inch: 600px / 16px = 37.5 and 2000px / 16 = 125em
-    @media  (min-resolution:192dpi) and (min-width: 37.5em), 
+    @media only screen and  (min-resolution:192dpi) and (min-width: 37.5em), 
             (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
             (min-width: 125em){
         background-image: linear-gradient(
@@ -64,7 +64,7 @@
         
     }
 
-    @media (min-resolution:192dpi) and (min-width: 37.5em), 
+    @media only screen and (min-resolution:192dpi) and (min-width: 37.5em), 
         (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
             (min-width: 125em){
         background-image: linear-gradient(90deg, rgba($color-white, .9) 0%, 
