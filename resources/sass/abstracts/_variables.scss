@@ -5,11 +5,29 @@
     --color-primary: #18BC9C;
     --color-primary-light: #18BC9C;
     --color-primary-dark: #15a589;
+
     --color-secondary: #2C3E50;
     --color-secondary-dark: #273748;
 
     --color-tertiary-light: #2998ff;
     --color-tertiary-dark: #5643fa;
+
+    --color-quaternary-light-1: #fdcc52;
+    --color-quaternary-light-2: #fdc539;
+    --color-quaternary-dark-1: #ff7730;
+    --color-quaternary-dark-2: #f4623a; // default
+
+    --color-grey-light-1: #f4f4f4;
+    --color-grey-light-2: #f8f9fa;
+    --color-grey-light-3: #f1f1f1;
+    --color-grey-dark: #ddd;
+    --color-grey-dark-1: #6c757d;
+    --color-grey-dark-2: #555;
+    --color-grey-dark-3: #333;
+
+    --color-white: #fff;
+    --color-black: #000;
+
 
     --color-facebook: #3b5998;
     --color-twitter: #00aced;
@@ -18,7 +36,14 @@
     --color-linkedin: #007bb6;
     --color-github: #040204;
 
-    
+    // box shadow
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --line: 1px solid var(--color-grey-light-2);
+
+
+
 }
 
 $color-primary: #18BC9C !default;
@@ -46,9 +71,6 @@ $color-grey-dark: #ddd;
 $color-grey-dark-1: #6c757d;
 $color-grey-dark-2: #555;
 $color-grey-dark-3: #333;
-
-
-
 
 $color-white: #fff;
 $color-black: #000;

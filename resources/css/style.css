@@ -24,12 +24,28 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --color-secondary-dark: #273748;
   --color-tertiary-light: #2998ff;
   --color-tertiary-dark: #5643fa;
+  --color-quaternary-light-1: #fdcc52;
+  --color-quaternary-light-2: #fdc539;
+  --color-quaternary-dark-1: #ff7730;
+  --color-quaternary-dark-2: #f4623a;
+  --color-grey-light-1: #f4f4f4;
+  --color-grey-light-2: #f8f9fa;
+  --color-grey-light-3: #f1f1f1;
+  --color-grey-dark: #ddd;
+  --color-grey-dark-1: #6c757d;
+  --color-grey-dark-2: #555;
+  --color-grey-dark-3: #333;
+  --color-white: #fff;
+  --color-black: #000;
   --color-facebook: #3b5998;
   --color-twitter: #00aced;
   --color-instagram: #517fa4;
   --color-google-plus:#dd4b39;
   --color-linkedin: #007bb6;
-  --color-github: #040204; }
+  --color-github: #040204;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+  --line: 1px solid var(--color-grey-light-2); }
 
 /* GRID
 $grid-width: 114rem;
@@ -73,6 +89,7 @@ $gutter-horizontal: 6rem;
   box-sizing: inherit; }
 
 html {
+  background-color: #fff;
   font-size: 62.5%;
   overflow: scroll;
   scroll-behavior: smooth; }
@@ -1061,6 +1078,9 @@ h2, h3, h4 {
   background-position: 100%;
   color: #18BC9C; }
 
+.sidebar {
+  background-color: red; }
+
 #landing-page {
   overflow: scroll;
   scroll-behavior: smooth; }
@@ -1099,3 +1119,6 @@ h2, h3, h4 {
     @media only screen and (min-width: 62.5em) {
       .contact__form {
         width: 60%; } }
+
+#resume-page {
+  background-color: var(--color-grey-dark-1); }
