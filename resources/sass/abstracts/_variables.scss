@@ -58,9 +58,18 @@ $color-black: #000;
 $default-font-size: 1.6rem;
 
 $grid-width: 114rem;
-$gutter-vertical: 4rem;
-$gutter-horizontal: 2rem;
-$gutter-vertical-small: 1.5rem;
+$gutter-vertical: 2%;
+$gutter-horizontal: 2%;
+$gutter-vertical-small: 1.5%;
+
+
+// NEW GRID SYSTEM WITH FLOATs
+
+$grid-columns: 12;
+$grid-max-width: 120rem;
+$breakpoint-small: "only screen and (min-width: 50em)";
+$breakpoint-midium: "only screen and (min-width: 62.5em)";
+$breakpoint-xl: "only screen and (min-width: 112.5em)";
 
 
 

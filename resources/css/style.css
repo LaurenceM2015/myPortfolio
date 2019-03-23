@@ -456,7 +456,7 @@ h2, h3, h4 {
     font-size: 1.4rem;
     text-transform: uppercase; }
   .card__price-value {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 100; }
   @media only screen and (max-width: 64em), only screen and (hover: none) {
     .card {
@@ -474,7 +474,7 @@ h2, h3, h4 {
       .card:hover .card__side--front {
         transform: rotateY(0); }
       .card__details {
-        padding: 4.5rem 3rem; }
+        padding: 1.5rem; }
       .card__cta {
         position: relative;
         top: 0%;
@@ -483,7 +483,7 @@ h2, h3, h4 {
         width: 100%;
         padding: 7rem 3rem 4rem 3rem; }
       .card__price-box {
-        margin-bottom: 3rem; } }
+        display: none; } }
 
 .composition {
   position: relative;
@@ -758,39 +758,130 @@ h2, h3, h4 {
     .container {
       max-width: 114rem; } }
 
-.row {
+.container:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class^='col-'] {
+  float: left;
+  padding: 1%;
+  min-height: .1rem;
+  width: 100%;
+  display: inline-block; }
+
+@media only screen and (min-width: 50em) {
+  .col-sm-1 {
+    width: 100%; }
+  .col-sm-2 {
+    width: 100%; }
+  .col-sm-3 {
+    width: 100%; }
+  .col-sm-4 {
+    width: 100%; }
+  .col-sm-5 {
+    width: 100%; }
+  .col-sm-6 {
+    width: 100%; }
+  .col-sm-7 {
+    width: 100%; }
+  .col-sm-8 {
+    width: 100%; }
+  .col-sm-9 {
+    width: 100%; }
+  .col-sm-10 {
+    width: 100%; }
+  .col-sm-11 {
+    width: 100%; }
+  .col-sm-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 62.5em) {
+  .col-md-1 {
+    width: 8.33333%; }
+  .col-md-2 {
+    width: 16.66667%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-4 {
+    width: 33.33333%; }
+  .col-md-5 {
+    width: 41.66667%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-7 {
+    width: 58.33333%; }
+  .col-md-8 {
+    width: 66.66667%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-10 {
+    width: 83.33333%; }
+  .col-md-11 {
+    width: 91.66667%; }
+  .col-md-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 112.5em) {
+  .col-xl-1 {
+    width: 8.33333%; }
+  .col-xl-2 {
+    width: 16.66667%; }
+  .col-xl-3 {
+    width: 25%; }
+  .col-xl-4 {
+    width: 33.33333%; }
+  .col-xl-5 {
+    width: 41.66667%; }
+  .col-xl-6 {
+    width: 50%; }
+  .col-xl-7 {
+    width: 58.33333%; }
+  .col-xl-8 {
+    width: 66.66667%; }
+  .col-xl-9 {
+    width: 75%; }
+  .col-xl-10 {
+    width: 83.33333%; }
+  .col-xl-11 {
+    width: 91.66667%; }
+  .col-xl-12 {
+    width: 100%; } }
+
+.Row {
   margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 1.5rem; }
+  .Row:not(:last-child) {
+    margin-bottom: 1.5%; }
     @media only screen and (min-width: 62.5em) {
-      .row:not(:last-child) {
-        margin-bottom: 4rem; } }
-  .row::after {
+      .Row:not(:last-child) {
+        margin-bottom: 2%; } }
+  .Row::after {
     content: "";
     display: table;
     clear: both; }
-  .row [class^="col-"] {
+  .Row [class^="Col-"] {
     float: left;
     width: 100%;
-    margin-bottom: 4rem; }
+    margin-bottom: 2%; }
     @media only screen and (min-width: 62.5em) {
-      .row [class^="col-"]:not(:last-child) {
-        margin-right: 2rem; } }
+      .Row [class^="Col-"]:not(:last-child) {
+        margin-right: 2%; } }
   @media only screen and (min-width: 62.5em) {
-    .row .col-1-of-2 {
-      width: calc((100% - 2rem) / 2); }
-    .row .col-1-of-3 {
-      width: calc((100% - 2 * 2rem) / 3); }
-    .row .col-1-of-4 {
-      width: calc((100% - 3 * 2rem) / 4); }
-    .row .col-1-of-5 {
-      width: calc((100% - 4 * 2rem) / 5); }
-    .row .col-2-of-3 {
-      width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
-    .row .col-2-of-4 {
-      width: calc( 2 * ((100% - 3 * 2rem) / 4) + 2rem); }
-    .row .col-3-of-4 {
-      width: calc( 3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); } }
+    .Row .Col-1-of-2 {
+      width: calc((100% - 2%) / 2); }
+    .Row .Col-1-of-3 {
+      width: calc((100% - 2 * 2%) / 3); }
+    .Row .Col-1-of-4 {
+      width: calc((100% - 3 * 2%) / 4); }
+    .Row .Col-1-of-5 {
+      width: calc((100% - 4 * 2%) / 5); }
+    .Row .Col-2-of-3 {
+      width: calc(2 * ((100% - 2 * 2%) / 3) + 2%); }
+    .Row .Col-2-of-4 {
+      width: calc( 2 * ((100% - 3 * 2%) / 4) + 2%); }
+    .Row .Col-3-of-4 {
+      width: calc( 3 * ((100% - 3 * 2%) / 4) + 2 * 2%); } }
 
 .header {
   background-image: linear-gradient(to left bottom, rgba(41, 152, 255, 0.5) 50%, rgba(126, 213, 111, 0.5));
