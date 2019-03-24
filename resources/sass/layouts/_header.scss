@@ -19,3 +19,59 @@
     }
 }
 
+
+// RESUME HEADER
+
+.resume-header{
+    background-color: var(--color-grey-dark);
+    border-bottom: var(--line);
+    
+
+    &__container{
+        padding: 1rem;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    &__profile-img{
+        max-width: 10rem;
+        max-height: 10rem;
+        border-radius: 50%;
+
+        
+    }
+
+    
+
+    &__profile-box{
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background-color: var(--color-grey-light-2);
+        }
+    }
+
+    &__btn:link{
+        padding: 1.5rem;
+        @include respond(phone){
+            padding: 1.5rem 3rem;
+        }
+    }
+    
+
+    
+    
+}
+
+
+
+
+
+
+
+
+

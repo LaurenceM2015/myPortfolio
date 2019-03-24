@@ -18,17 +18,13 @@
         left: 3rem;
         z-index: 100;
 
-        @include respond(tab-port){
-            
-            
-        }
+        
     }
 
     &__logo{
         text-transform: uppercase;
         font-family: "Montserrat";
         display: inline-block;
-        // for testing only
         //color: $color-secondary;
         color: $color-white;
         letter-spacing: .1rem;
@@ -40,8 +36,6 @@
 
         @include respond(tab-port){
             margin-top: -1rem;
-            
-           
         }
        
     }
