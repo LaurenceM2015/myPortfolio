@@ -89,9 +89,11 @@ $gutter-vertical-small: 1.5%;
 
 $grid-columns: 12;
 $grid-max-width: 120rem;
-$breakpoint-small: "only screen and (min-width: 50em)";
-$breakpoint-midium: "only screen and (min-width: 62.5em)";
-$breakpoint-xl: "only screen and (min-width: 112.5em)";
+$breakpoint-phone: "only screen and (min-width: 37.5em)"; // 600px
+$breakpoint-small: "only screen and (min-width: 50em)"; // 800px;
+$breakpoint-midium: "only screen and (min-width: 62.5em)"; // 1000px
+$breakpoint-big: "only screen and (min-width: 75em)"; // 1200px;
+$breakpoint-xl: "only screen and (min-width: 112.5em)"; // 1800px;
 
 $bp-largest: 75em;     // 1200px
 $bp-large: 68.75em;    // 1100px

@@ -23,16 +23,20 @@
 // RESUME HEADER
 
 .resume-header{
-    background-color: var(--color-grey-dark);
+    background-color: var(--color-secondary-dark);
     border-bottom: var(--line);
     
 
     &__container{
-        padding: 1rem;
+        padding: 1rem 2rem;
         
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include respond(phone){
+            padding: 1rem 3rem;
+        }
     }
 
     
@@ -41,10 +45,7 @@
         max-height: 10rem;
         border-radius: 50%;
 
-        
     }
-
-    
 
     &__profile-box{
         display: flex;
@@ -61,9 +62,6 @@
             padding: 1.5rem 3rem;
         }
     }
-    
-
-    
     
 }
 
