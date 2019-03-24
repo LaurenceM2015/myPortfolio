@@ -1,0 +1,40 @@
+// body container
+#resume-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fff;
+
+}
+
+// Header section
+.resume-header{
+    background-color: var(--color-grey-dark);
+    height: 7rem;
+    border-bottom: var(--line);
+}
+
+// main content
+.content{
+    background-color: #fff;
+
+    display: flex;
+}
+
+// sidebar
+.sidebar-aside{
+    background-color: rgba($color-secondary, .7);
+
+    flex: 0 0 18%;
+}
+.main-content{
+    background-color: var(--color-grey-light-3);
+    height: 100vh;
+    flex: 1;
+
+    padding: 0;
+}
+
+.resume-footer{
+    background-color: var(--color-secondary-dark);
+}

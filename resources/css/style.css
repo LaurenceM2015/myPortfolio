@@ -1078,9 +1078,6 @@ h2, h3, h4 {
   background-position: 100%;
   color: #18BC9C; }
 
-.sidebar {
-  background-color: red; }
-
 #landing-page {
   overflow: scroll;
   scroll-behavior: smooth; }
@@ -1121,4 +1118,29 @@ h2, h3, h4 {
         width: 60%; } }
 
 #resume-page {
-  background-color: var(--color-grey-dark-1); }
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fff; }
+
+.resume-header {
+  background-color: var(--color-grey-dark);
+  height: 7rem;
+  border-bottom: var(--line); }
+
+.content {
+  background-color: #fff;
+  display: flex; }
+
+.sidebar-aside {
+  background-color: rgba(44, 62, 80, 0.7);
+  flex: 0 0 18%; }
+
+.main-content {
+  background-color: var(--color-grey-light-3);
+  height: 100vh;
+  flex: 1;
+  padding: 0; }
+
+.resume-footer {
+  background-color: var(--color-secondary-dark); }
