@@ -24,12 +24,28 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --color-secondary-dark: #273748;
   --color-tertiary-light: #2998ff;
   --color-tertiary-dark: #5643fa;
+  --color-quaternary-light-1: #fdcc52;
+  --color-quaternary-light-2: #fdc539;
+  --color-quaternary-dark-1: #ff7730;
+  --color-quaternary-dark-2: #f4623a;
+  --color-grey-light-1: #f4f4f4;
+  --color-grey-light-2: #f8f9fa;
+  --color-grey-light-3: #f1f1f1;
+  --color-grey-dark: #ddd;
+  --color-grey-dark-1: #6c757d;
+  --color-grey-dark-2: #555;
+  --color-grey-dark-3: #333;
+  --color-white: #fff;
+  --color-black: #000;
   --color-facebook: #3b5998;
   --color-twitter: #00aced;
   --color-instagram: #517fa4;
   --color-google-plus:#dd4b39;
   --color-linkedin: #007bb6;
-  --color-github: #040204; }
+  --color-github: #040204;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+  --line: 1px solid var(--color-grey-light-2); }
 
 /* GRID
 $grid-width: 114rem;
@@ -888,12 +904,39 @@ h2, h3, h4 {
   position: relative;
   height: 100vh; }
   .header__text-box {
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center; }
+
+.resume-header {
+  background-color: var(--color-secondary-dark);
+  border-bottom: var(--line); }
+  .resume-header__container {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media only screen and (min-width: 37.5em) {
+      .resume-header__container {
+        padding: 1rem 3rem; } }
+  .resume-header__profile-img {
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 50%; }
+  .resume-header__profile-box {
+    display: flex;
+    align-items: center; }
+    .resume-header__profile-box:hover {
+      background-color: var(--color-grey-light-2); }
+  .resume-header__btn:link {
+    padding: 1.5rem; }
+    @media only screen and (min-width: 37.5em) {
+      .resume-header__btn:link {
+        padding: 1.5rem 3rem; } }
 
 @media only screen and (min-width: 50em) {
   .navigation {
@@ -1061,6 +1104,76 @@ h2, h3, h4 {
   background-position: 100%;
   color: #18BC9C; }
 
+.aside {
+  background-color: var(--color-secondary);
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.side-nav {
+  font-size: .8rem;
+  display: flex; }
+  @media only screen and (min-width: 37.5em) {
+    .side-nav {
+      display: block;
+      margin-top: 3.5rem;
+      font-size: 1.4rem; } }
+  .side-nav__item {
+    position: relative;
+    flex: 1; }
+    @media only screen and (min-width: 37.5em) {
+      .side-nav__item:not(:last-child) {
+        margin-bottom: .5rem; } }
+  .side-nav__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-primary);
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
+  .side-nav__item:hover::before, .side-nav__item--active::before {
+    transform: scaleY(1);
+    width: 100%; }
+  .side-nav__item:active::before {
+    background-color: var(--color-primary-dark); }
+  .side-nav__link:active {
+    background-color: var(--color-primary-light); }
+  .side-nav__link:link, .side-nav__link:visited {
+    color: var(--color-white);
+    text-transform: uppercase;
+    display: block;
+    padding: 1rem .5rem;
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    outline: none; }
+    @media only screen and (min-width: 37.5em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        padding: 1.5rem 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: inherit; } }
+  .side-nav__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 2rem;
+    fill: currentColor;
+    display: none; }
+    @media only screen and (min-width: 37.5em) {
+      .side-nav__icon {
+        display: block; } }
+
+.sidebar-footer {
+  display: none; }
+  @media only screen and (min-width: 37.5em) {
+    .sidebar-footer {
+      background-color: greenyellow;
+      display: block; } }
+
 #landing-page {
   overflow: scroll;
   scroll-behavior: smooth; }
@@ -1099,3 +1212,26 @@ h2, h3, h4 {
     @media only screen and (min-width: 62.5em) {
       .contact__form {
         width: 60%; } }
+
+#resume-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #fff; }
+  #resume-page section {
+    padding: 4rem 0; }
+
+.main-content {
+  background-color: #fff;
+  min-height: 100vh; }
+  @media only screen and (min-width: 37.5em) {
+    .main-content {
+      display: flex; } }
+
+.content-hotel-view {
+  min-height: 100vh;
+  flex: 1; }
+
+.resume-footer {
+  background-color: var(--color-secondary-dark); }

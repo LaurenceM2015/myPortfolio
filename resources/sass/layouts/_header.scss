@@ -10,6 +10,7 @@
 
 
     &__text-box {
+        color: $color-white;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -18,3 +19,58 @@
         text-align: center;
     }
 }
+
+
+// RESUME HEADER
+
+.resume-header{
+    background-color: var(--color-secondary-dark);
+    border-bottom: var(--line);
+    
+
+    &__container{
+        padding: 1rem 2rem;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(phone){
+            padding: 1rem 3rem;
+        }
+    }
+
+    
+    &__profile-img{
+        max-width: 10rem;
+        max-height: 10rem;
+        border-radius: 50%;
+
+    }
+
+    &__profile-box{
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background-color: var(--color-grey-light-2);
+        }
+    }
+
+    &__btn:link{
+        padding: 1.5rem;
+        @include respond(phone){
+            padding: 1.5rem 3rem;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
