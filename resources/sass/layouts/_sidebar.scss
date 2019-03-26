@@ -1,0 +1,117 @@
+////////////////////////////////////////// 
+//// SIDEBAR
+.aside{
+    background-color: var(--color-secondary);
+
+    flex: 0 0 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+.side-nav{
+    font-size: .8rem;
+    
+    display: flex;
+
+    @include respond(phone){
+        display: block;
+        margin-top: 3.5rem;
+
+        font-size: 1.4rem;
+    }
+
+    &__item{
+        position: relative;
+
+        flex: 1;
+
+        @include respond(phone){
+            &:not(:last-child){margin-bottom: .5rem;}
+
+        }
+    }
+
+    &__item::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: var(--color-primary);
+        transform: scaleY(0);
+        transition: transform .2s,
+                    width .4s cubic-bezier(1,0,0,1) .2s,
+                    background-color .1s;
+        
+    
+    }
+
+    &__item:hover::before,
+    &__item--active::before {
+        transform: scaleY(1);
+        width: 100%;
+    }
+
+    &__item:active::before {
+        background-color: var(--color-primary-dark);
+    }
+
+    &__link:active{
+        background-color: var(--color-primary-light);
+    }
+
+    
+
+    &__link:link,
+    &__link:visited {
+        color: var(--color-grey-light-1);
+        text-transform: uppercase;
+        display: block;
+        padding: 1rem .5rem;
+        position: relative;
+        z-index: 10;
+
+        
+        justify-content: center;
+
+        outline: none;
+
+        @include respond(phone){
+            padding: 1.5rem 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: inherit;
+
+        }
+
+    }
+
+    &__icon{
+        width: 1.75rem;
+        height: 1.75rem;
+        margin-right: 2rem;
+        fill: currentColor;
+        display: none;
+
+        @include respond(phone){
+            display: block;
+
+        }
+    }
+
+}
+
+.sidebar-footer{
+    display: none;
+
+    @include respond(phone){
+        background-color: greenyellow;
+        display: block;
+    }
+    
+}

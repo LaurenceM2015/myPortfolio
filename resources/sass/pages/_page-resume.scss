@@ -1,0 +1,39 @@
+// body container
+#resume-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 100vh;
+    background-color: #fff;
+
+    section{
+        padding: 4rem 0;
+    }
+
+}
+
+// main content
+.main-content{
+    background-color: #fff;
+    min-height: 100vh;
+    
+    @include respond(phone){
+        display: flex;
+    }
+    
+}
+
+.content-hotel-view{
+    // TEST
+    min-height: 100vh;
+
+    flex: 1;
+
+}
+
+
+
+.resume-footer{
+    background-color: var(--color-secondary-dark);
+}
