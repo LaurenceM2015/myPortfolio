@@ -1229,9 +1229,40 @@ h2, h3, h4 {
     .main-content {
       display: flex; } }
 
-.content-hotel-view {
+.content-view {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-dark);
+  padding: 0 3rem;
+  margin: 2rem;
   min-height: 100vh;
   flex: 1; }
+
+.intro .heading-primary {
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  font-size: 4.5rem;
+  margin-bottom: 0; }
+
+.intro .heading-primary--main {
+  color: var(--color-secondary-dark);
+  display: inline-block; }
+
+.intro .heading-primary--main-sub {
+  color: var(--color-primary-dark);
+  font-size: inherit; }
+
+.intro .email {
+  font-style: italic;
+  color: var(--color-primary-dark); }
+
+.resume {
+  display: flex;
+  justify-content: space-between; }
+  .resume__box--text {
+    flex: 2; }
+  .resume__box--date {
+    color: var(--color-tertiary-light);
+    text-align: right !important;
+    flex: 1; }
 
 .resume-footer {
   background-color: var(--color-secondary-dark); }
