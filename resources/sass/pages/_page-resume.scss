@@ -25,7 +25,7 @@
 }
 
 .content-view{
-    background-color: var(--color-white);
+    background-color: var(--color-grey-light-1);
     box-shadow: var(--shadow-dark);
     padding: 0 3rem;
     margin: 2rem;
@@ -64,7 +64,6 @@
     &__box{
 
         &--text{
-           
             flex: 2;
         }
 
