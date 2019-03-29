@@ -1275,11 +1275,7 @@ h2, h3, h4 {
 
 .aside {
   background-color: var(--color-secondary);
-<<<<<<< HEAD
   flex: 0 0 10%;
-=======
-  flex: 0 0 20%;
->>>>>>> e13af41b028737411da17f9d50e1bbbc27abe90c
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -1316,11 +1312,7 @@ h2, h3, h4 {
   .side-nav__link:active {
     background-color: var(--color-primary-light); }
   .side-nav__link:link, .side-nav__link:visited {
-<<<<<<< HEAD
-    color: var(--color-white);
-=======
     color: var(--color-grey-light-1);
->>>>>>> e13af41b028737411da17f9d50e1bbbc27abe90c
     text-transform: uppercase;
     display: block;
     padding: 1rem .5rem;
@@ -1348,10 +1340,7 @@ h2, h3, h4 {
   display: none; }
   @media only screen and (min-width: 37.5em) {
     .sidebar-footer {
-<<<<<<< HEAD
-=======
       background-color: greenyellow;
->>>>>>> e13af41b028737411da17f9d50e1bbbc27abe90c
       display: block; } }
 
 #landing-page {
@@ -1399,11 +1388,8 @@ h2, h3, h4 {
   justify-content: space-between;
   min-height: 100vh;
   background-color: #fff; }
-<<<<<<< HEAD
   #resume-page section {
     padding: 4rem 0; }
-=======
->>>>>>> e13af41b028737411da17f9d50e1bbbc27abe90c
 
 .main-content {
   background-color: #fff;
@@ -1412,7 +1398,6 @@ h2, h3, h4 {
     .main-content {
       display: flex; } }
 
-<<<<<<< HEAD
 .content-view {
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
@@ -1448,12 +1433,5 @@ h2, h3, h4 {
     text-align: right !important;
     flex: 1; }
 
-=======
-.content-hotel-view {
-  background-color: orangered;
-  min-height: 100vh;
-  flex: 1; }
-
->>>>>>> e13af41b028737411da17f9d50e1bbbc27abe90c
 .resume-footer {
   background-color: var(--color-secondary-dark); }
