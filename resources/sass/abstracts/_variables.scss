@@ -45,8 +45,11 @@
 
 
 
+<<<<<<< HEAD
 
     
+=======
+>>>>>>> e13af41b028737411da17f9d50e1bbbc27abe90c
 }
 
 $color-primary: #18BC9C !default;
@@ -75,9 +78,6 @@ $color-grey-dark-1: #6c757d;
 $color-grey-dark-2: #555;
 $color-grey-dark-3: #333;
 
-
-
-
 $color-white: #fff;
 $color-black: #000;
 
@@ -95,9 +95,17 @@ $gutter-vertical-small: 1.5%;
 
 $grid-columns: 12;
 $grid-max-width: 120rem;
-$breakpoint-small: "only screen and (min-width: 50em)";
-$breakpoint-midium: "only screen and (min-width: 62.5em)";
-$breakpoint-xl: "only screen and (min-width: 112.5em)";
+$breakpoint-phone: "only screen and (min-width: 37.5em)"; // 600px
+$breakpoint-small: "only screen and (min-width: 50em)"; // 800px;
+$breakpoint-midium: "only screen and (min-width: 62.5em)"; // 1000px
+$breakpoint-big: "only screen and (min-width: 75em)"; // 1200px;
+$breakpoint-xl: "only screen and (min-width: 112.5em)"; // 1800px;
+
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px
 
 
 

@@ -69,7 +69,7 @@
 
     &__link:link,
     &__link:visited {
-        color: var(--color-white);
+        color: var(--color-grey-light-1);
         text-transform: uppercase;
         display: block;
         padding: 1rem .5rem;
@@ -110,6 +110,7 @@
     display: none;
 
     @include respond(phone){
+        background-color: greenyellow;
         display: block;
     }
     

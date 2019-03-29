@@ -1,30 +1,3 @@
-@mixin clearfix {
-    &::after{
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-// TO CENTER THE BOX
-@mixin absCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-// BOX SHADOW MIXINS
-
-
-
-  @mixin boxShadow($top, $left, $blur, $color, $inset:"") {
-
-    -webkit-box-shadow:$top $left $blur $color #{$inset};
-    -moz-box-shadow:$top $left $blur $color #{$inset};
-    box-shadow:$top $left $blur $color #{$inset};
-  }
-
 
 // COSTUM MEDIA QUERY MANAGER.
 
@@ -73,4 +46,38 @@ ORDER: Base + typography > general layout + grid > page layout > components
     
     
 }
+
+
+
+
+
+
+
+//////////////////////////////////////////////// 
+///// BOX SHADOW MIXINS
+
+@mixin boxShadow($top, $left, $blur, $color, $inset:"") {
+
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+  }
+
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// TO CENTER THE BOX
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
