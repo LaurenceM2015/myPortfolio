@@ -1619,3 +1619,19 @@ div[class^="Col-"] {
 
 .resume-footer {
   background-color: var(--color-secondary-dark); }
+
+.porfolion-container {
+  display: grid;
+  grid-template-rows: 1fr 80vh 100vh 1fr; }
+
+.port-nav {
+  background-color: #2C3E50; }
+
+.port-header {
+  background-color: #18BC9C; }
+
+.port-main {
+  background-color: #2998ff; }
+
+.port-footer {
+  background-color: #fdcc52; }

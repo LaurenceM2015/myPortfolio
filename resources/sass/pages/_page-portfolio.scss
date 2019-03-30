@@ -1,0 +1,22 @@
+.porfolion-container{
+    display: grid;
+
+    // 1: nav, 2: header, 3: main-container, and 4: footer
+    grid-template-rows: 1fr 80vh 100vh 1fr;
+}
+
+.port-nav{
+    background-color: $color-secondary;
+}
+
+.port-header{
+    background-color: $color-primary;
+}
+
+.port-main{
+    background-color: $color-tertiary-light;
+}
+
+.port-footer{
+    background-color: $color-quaternary-light-1;
+}
