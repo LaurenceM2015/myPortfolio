@@ -1,24 +1,48 @@
-// ALL OF THE HEADER 
-.header{
-    //linear-gradient(to right bottom, rgba($color-black, 0.7), rgba($color-black, 0.8));
-    background-image: linear-gradient( to left bottom, 
-                       rgba($color-tertiary-light, 0.5) 50%, 
-                       rgba($color-primary-light, 0.5));
-    
+.header {
+    height: 85vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(../img/hero-small.jpg);
+    background-size: cover;
+    background-position: top;
     position: relative;
-    height: 100vh;
+    
 
+   
 
-    &__text-box {
-        color: $color-white;
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url(../img/hero.jpg);
+    }
+
+   
+
+    &__logo-box {
         position: absolute;
-        top: 50%;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100%;
         text-align: center;
     }
 }
+
 
 
 // RESUME HEADER
