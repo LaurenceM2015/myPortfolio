@@ -1457,6 +1457,98 @@ div[class^="Col-"] {
   background-position: 100%;
   color: #18BC9C; }
 
+.port-nav-container {
+  background: #E54B4B;
+  color: #EBEBD3;
+  padding: 1em 0;
+  position: relative; }
+  .port-nav-container::after {
+    content: '';
+    clear: both;
+    display: block; }
+  .port-nav-container__logo {
+    float: left;
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700; }
+    .port-nav-container__logo span {
+      font-weight: 400; }
+
+.port-nav {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  background: #464655;
+  clip-path: circle(0px at top left);
+  transition: clip-path ease-in-out 700ms;
+  /* overflow: hidden; */
+  /*   display: none; */ }
+  @media only screen and (min-width: 50em) {
+    .port-nav {
+      height: auto;
+      position: relative;
+      background: transparent;
+      float: right;
+      clip-path: initial; } }
+  .port-nav__item:not(:last-child) {
+    border-bottom: 1px solid #575766 !important; }
+  @media only screen and (min-width: 50em) {
+    .port-nav__item {
+      display: inline-block;
+      border: none; } }
+  .port-nav__link {
+    color: #EBEBD3;
+    display: block;
+    padding: 2em 4em 2em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none; }
+    @media only screen and (min-width: 50em) {
+      .port-nav__link {
+        padding: 0;
+        margin-left: 3em; } }
+    .port-nav__link:hover, .port-nav__link:focus {
+      background: #E4B363;
+      color: #464655; }
+      @media only screen and (min-width: 50em) {
+        .port-nav__link:hover, .port-nav__link:focus {
+          background: transparent; } }
+  .port-nav__menu-toggle {
+    background-color: red;
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    cursor: pointer; }
+    @media only screen and (min-width: 50em) {
+      .port-nav__menu-toggle {
+        display: none; } }
+  .port-nav__icon, .port-nav__icon::before, .port-nav__icon::after {
+    content: '';
+    display: block;
+    background: #EBEBD3;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms; }
+  .port-nav__icon::before {
+    transform: translateY(-6px); }
+  .port-nav__icon::after {
+    transform: translateY(3px); }
+
+.nav--open {
+  clip-path: circle(250% at top right); }
+
+.open .hamburger {
+  transform: rotate(45deg); }
+
+/* To Remove the 1 line one */
+.open .hamburger::before {
+  opacity: 0; }
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg); }
+
 .aside {
   background-color: var(--color-secondary);
   flex: 0 0 10%;

@@ -233,8 +233,154 @@
          }
      }
 
+}
+
+///////////////////////////////////////////////////////////////////
+////// NEW NAVIGATION WITH JAVASCRIPT
+
+.port-nav-container {
+    background: #E54B4B;
+    color: #EBEBD3;
+    padding: 1em 0;
+    position: relative;
 
 
+        &::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
 
+        &__logo {
+            float: left;
+            font-size: 1rem;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            span{
+                font-weight: 400;
+            }
+        }
+
+        &__list-box{
+            
+        }
 
 }
+
+        
+
+    .port-nav{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        background: #464655;
+        clip-path: circle(0px at top left);
+        transition: clip-path ease-in-out 700ms;
+        /* overflow: hidden; */
+        /*   display: none; */
+            @media only screen and (min-width: 50em){
+                height: auto;
+                position: relative;
+                background: transparent;
+                float: right;
+                clip-path: initial;
+        }
+
+        &__list{
+
+        }
+
+        &__item {
+
+            &:not(:last-child){
+                border-bottom: 1px solid #575766 !important;
+            }
+
+            @media only screen and (min-width: 50em){
+                
+                    display: inline-block;
+                    border: none;
+            }
+        }
+
+        &__link {
+            color: #EBEBD3;
+            display: block;
+            padding: 2em 4em 2em 1.5em;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            @media only screen and (min-width: 50em){
+                padding: 0;
+                margin-left: 3em;
+            }
+
+            &:hover, &:focus{
+                background: #E4B363;
+                color: #464655;
+
+                @media only screen and (min-width: 50em){
+                    
+                    background: transparent;
+                    
+                }
+            }
+        }
+
+        &__menu-toggle{
+            background-color: red;
+            padding: 1em;
+            position: absolute;
+            top: .5em;
+            right: .5em;
+            cursor: pointer;
+
+            @media only screen and (min-width: 50em){
+                display: none;
+            }
+            
+        }
+
+        &__icon, &__icon::before, &__icon::after{
+            content: '';
+            display: block;
+            background: #EBEBD3;
+            height: 3px;
+            width: 1.75em;
+            border-radius: 3px;
+            transition: all ease-in-out 500ms;
+
+        }
+
+        &__icon{
+            &::before{
+                transform: translateY(-6px);
+            }
+
+            &::after{
+                transform: translateY(3px);
+            }
+        }
+
+    }
+
+        .nav--open {clip-path: circle(250% at top right);}
+
+       
+
+       
+
+
+
+        .open .hamburger {transform: rotate(45deg);}
+
+        /* To Remove the 1 line one */
+        .open .hamburger::before {opacity: 0;}
+
+        .open .hamburger::after{
+            transform: translateY(-3px) rotate(-90deg);
+        }
+
+
