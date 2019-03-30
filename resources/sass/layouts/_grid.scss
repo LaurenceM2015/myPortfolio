@@ -149,3 +149,126 @@
 
 }
 
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////// FLEXBOX GRID SYSTEM
+
+/////// Flexbox grid with gutter
+
+$base-gutter: 2em;
+$bp-small: 540px;
+$bp-medium: 800px;
+$bp-large: 1160px;
+$bp-xlarge: 1440px;
+
+// Column widths for grid mixin
+$colset: (
+	col-1-5: percentage(1/5),
+	col-2-5: percentage(2/5),
+	col-3-5: percentage(3/5),
+	col-4-5: percentage(4/5),
+	col-1-4: percentage(1/4),
+	col-1-2: percentage(1/2),
+	col-3-4: percentage(3/4),
+	col-1-3: percentage(1/3),
+	col-2-3: percentage(2/3)
+);
+// Grid mixin
+@mixin gridset($bp, $colset) {
+	@each $colwidth, $width in $colset {
+		.#{$bp}-#{$colwidth} { max-width: $width; }
+	}
+}
+
+.grid-row {
+  
+	@media (min-width: $bp-small) {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-left: -($base-gutter/2);
+    margin-right: -($base-gutter/2);
+    
+    > * {
+      box-sizing: border-box;
+      padding-left: $base-gutter/2;
+      padding-right: $base-gutter/2;
+    }
+  }
+}
+
+@media (min-width: $bp-small) {
+  @include gridset('sm', $colset);
+}
+@media (min-width: $bp-medium) {
+  @include gridset('md', $colset);
+}
+@media (min-width: $bp-large) {
+  @include gridset('lg', $colset);
+}
+@media (min-width: $bp-xlarge) {
+  @include gridset('xl', $colset);
+}
+
+
+
+
+
+
+.content-wrap {
+  box-shadow: inset 0 0 0 1px red;
+  //max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[class*='col-'] {
+  padding-bottom: $base-gutter;
+  box-shadow: inset 0 0 0 1px lightblue;
+}
+
+
+
+
+
+// Flexbox grid with no gatter
+
+.flex-container{
+    width: calc(100% - 10em);
+    max-width: 60em;
+    margin: 0 auto;
+}
+  
+  
+div[class^="col-"]{
+    padding: 1rem 0;
+    text-align: center;
+}
+  
+
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+
+$columns: 12;
+
+@for $i from 1 through $columns{
+    .col-#{$i}{
+        flex: 0 0 100% / $columns * $i
+    }
+    
+  .col-offset-#{$i}{
+    margin-left: 100% / $columns * $i
+
+  }
+   
+}
+  
+    
+
+
