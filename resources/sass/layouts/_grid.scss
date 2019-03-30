@@ -219,15 +219,15 @@ $colset: (
 
 
 .content-wrap {
-  box-shadow: inset 0 0 0 1px red;
+  
   //max-width: 80em;
   margin-left: auto;
   margin-right: auto;
 }
 
-[class*='col-'] {
+[class*='Col-'] {
   padding-bottom: $base-gutter;
-  box-shadow: inset 0 0 0 1px lightblue;
+  
 }
 
 
@@ -243,7 +243,7 @@ $colset: (
 }
   
   
-div[class^="col-"]{
+div[class^="Col-"]{
     padding: 1rem 0;
     text-align: center;
 }
