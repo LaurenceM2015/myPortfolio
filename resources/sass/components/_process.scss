@@ -10,16 +10,20 @@
     &__header{
         
         &--icon{
-            
-            display: inline;
+            height: 2rem;
+           // width: 3rem !important;
+            display: inline-block;
+        }
+        svg{
+            width: 3rem !important
         }
 
-        &--heading{display: inline;}
+        &--heading{display: inline-block;}
     }
 
     &__icon{
-        height: 1.5rem;
-        width: 1.5rem;
+        width: 2rem;
+        height: 2rem;
         fill: var(--color-secondary, --color-secondary-dark);
     }
 

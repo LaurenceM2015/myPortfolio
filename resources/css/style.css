@@ -735,12 +735,15 @@ h2, h3, h4 {
   transition: transform .3s;
   height: auto; }
   .process-box__header--icon {
-    display: inline; }
+    height: 2rem;
+    display: inline-block; }
+  .process-box__header svg {
+    width: 3rem !important; }
   .process-box__header--heading {
-    display: inline; }
+    display: inline-block; }
   .process-box__icon {
-    height: 1.5rem;
-    width: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     fill: var(--color-secondary, --color-secondary-dark); }
   .process-box__item {
     padding: .5rem; }
