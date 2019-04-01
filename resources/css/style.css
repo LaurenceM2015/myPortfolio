@@ -211,8 +211,8 @@ h2, h3, h4 {
         */ }
     @media only screen and (min-width: 50em) {
       .heading-primary--sub {
-        letter-spacing: .5rem;
-        font-size: 2rem; } }
+        letter-spacing: .4rem;
+        font-size: 1.5rem; } }
 
 .heading-secondary {
   background-image: linear-gradient(to right, #7ed56f, #15a589);
@@ -1253,14 +1253,14 @@ div[class^="Col-"] {
   margin-left: 100%; }
 
 .header {
-  height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(21, 165, 137, 0.8)), url(../img/hero-small.jpg);
+  height: 90vh;
+  background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.8), rgba(39, 55, 72, 0.8)), url(img/hero1-min.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(21, 165, 137, 0.8)), url(../img/hero.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.8), rgba(39, 55, 72, 0.8)), url(img/hero1.jpg); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -1269,7 +1269,7 @@ div[class^="Col-"] {
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
@@ -1387,7 +1387,8 @@ div[class^="Col-"] {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  transform: translateX(0); }
 
 .navigation__icon {
   position: relative;

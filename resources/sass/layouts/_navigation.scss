@@ -100,19 +100,27 @@
         }
     }
 
+ 
+
 
     //FUNCTIONALITY
+
+    // navigation__checkbox navigation__background
     &__checkbox:checked ~ &__background {
         transform: scale(80);
     }
 
+    // navigation__checkbox navigation__nav
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
+        transform: translateX(0);
     }
 
 
     //ICON
+
+    // navigation__icon
     &__icon {
         position: relative;
         margin-top: 3.5rem;
