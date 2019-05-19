@@ -1536,7 +1536,7 @@ div[class^="Col-"] {
   flex-direction: column;
   justify-content: space-evenly;
   background-color: #fff; }
-  #resume-page section {
+  #resume-page article {
     padding: 2rem 0; }
 
 .main-content {
