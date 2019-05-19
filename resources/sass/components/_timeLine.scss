@@ -2,8 +2,6 @@
 // TIME LINE
 
 .timeline{
-   
-    
     background-image: url(img/line.png);
     background-repeat: repeat-y;
     background-position: 5rem 0;
@@ -117,9 +115,10 @@
     }
 
     &__desc{
-        background:#fff;
+        background: $color-grey-light-1;
         border-radius:1rem;
         padding:1.5rem;
+        font-size: 1.2rem;
 
         margin-left: 2rem;
         margin-right: 0;
