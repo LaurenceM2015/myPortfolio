@@ -19,25 +19,24 @@
     background-color: var(--color-grey-light-1);
    // min-height: 100vh;
     
-    @include respond(phone){
-        display: flex;
-    }
+   @include respond(tab-land){
+       display: flex
+   }
+        
+    
     
 }
 
 // hotel-view content-details
 .content-details{
-   /*
-     
-    margin: 2rem;
-    // TEST
-    min-height: 100vh;
-   */
-   
-   display: flex ;
-   padding: 2rem;
   
+   padding: 2rem;
 
+   @media only screen and (min-width: 62.5em){
+
+        
+    }
+   
 }
 
 // descripiton
