@@ -19,13 +19,33 @@
     background-color: var(--color-grey-light-1);
    // min-height: 100vh;
     
-   @include respond(tab-land){
-       display: flex
-   }
-        
-    
-    
+   @include respond(tab-land){display: flex}
+     
 }
+
+// RESUME SECTION
+
+.resume{
+    
+    &__headings{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__date{
+        color: var(--color-tertiary-light);
+        text-align: right !important;
+        flex: 1;
+    }
+
+    &__box{
+
+       
+
+    }
+
+}
+
 
 // hotel-view content-details
 .content-details{
@@ -129,33 +149,6 @@
         color: var(--color-primary-dark);
         }
 }
-
-
-.resume{
-    display: flex;
-    justify-content: space-between;
-
-    &__box{
-
-        &--text{
-            flex: 2;
-        }
-
-        &--date{
-           
-            color: var(--color-tertiary-light);
-            text-align: right !important;
-            flex: 1;
-
-        }
-
-    }
-
-   
-
-}
-
-
 
 
 .resume-footer{

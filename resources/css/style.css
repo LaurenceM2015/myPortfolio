@@ -1595,6 +1595,15 @@ div[class^="Col-"] {
     .main-content {
       display: flex; } }
 
+.resume__headings {
+  display: flex;
+  justify-content: space-between; }
+
+.resume__date {
+  color: var(--color-tertiary-light);
+  text-align: right !important;
+  flex: 1; }
+
 .content-details {
   padding: 2rem; }
 
@@ -1658,16 +1667,6 @@ div[class^="Col-"] {
 .intro .email {
   font-style: italic;
   color: var(--color-primary-dark); }
-
-.resume {
-  display: flex;
-  justify-content: space-between; }
-  .resume__box--text {
-    flex: 2; }
-  .resume__box--date {
-    color: var(--color-tertiary-light);
-    text-align: right !important;
-    flex: 1; }
 
 .resume-footer {
   background-color: var(--color-secondary-dark); }
