@@ -893,7 +893,7 @@ h2, h3, h4 {
           background-position: top right;
           float: left; } }
   .timeline__desc {
-    background: #f4f4f4;
+    background: #fff;
     border-radius: 1rem;
     padding: 1.5rem;
     font-size: 1.2rem;
@@ -912,33 +912,6 @@ h2, h3, h4 {
     padding: .6rem;
     border-radius: .5rem; }
 
-/*
-@include respond(tab-land){
-    
-    .timeline{
-        
-        
-
-      
-
-     
-
-        
-
-        
-
-        
-        
-       
-        
-        
-        
-       
-    }
-
-}
-
-*/
 .footer {
   text-align: center !important;
   color: #f8f9fa;
@@ -1607,8 +1580,10 @@ div[class^="Col-"] {
 .content-details {
   padding: 2rem; }
 
+.resume-content {
+  background-color: #f4f4f4; }
+
 .content-description {
-  background-color: #fff;
   box-shadow: var(--shadow-dark);
   padding: 3rem !important;
   margin-right: 2rem;
