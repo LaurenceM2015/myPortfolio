@@ -7,7 +7,7 @@
 
     
     "watch:sass": "node-sass resources/sass/main.scss resources/css/style.css -w",
-    "devserve": "live-server",
+    "devserve": "live-server --browser=firefox",
     "start": "npm-run-all --parallel devserve watch:sass",
 
     
