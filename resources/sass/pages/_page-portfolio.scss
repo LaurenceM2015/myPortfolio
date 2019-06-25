@@ -1,22 +1,116 @@
-.porfolion-container{
-    display: grid;
+/* Header Showcase */
 
-    // 1: nav, 2: header, 3: main-container, and 4: footer
-    grid-template-rows: 1fr 80vh 100vh 1fr;
-}
+#port-header {
+    color: $color-white;
+    text-align: center;
+    background-color:$color-primary;
 
-.port-nav{
-    background-color: $color-secondary;
-}
+    h1 {
+        padding-top: 100px;
+        padding-bottom: 0;
+      }
+  }
+  
+  
+  
+  #port-header .content-wrap,
+  #section-intro .content-wrap {
+    padding: 0 1.5em;
+  }
+  
+  /* Section A */
+  
+  #section-intro {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+  }
+  
+  /* Section A */
+  
+  #section-showcase {
+    padding: 2em 1em 1em;
 
-.port-header{
-    background-color: $color-primary;
-}
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
 
-.port-main{
-    background-color: $color-tertiary-light;
-}
+      li {
+        margin-bottom: 1em;
+        background: #fff;
+        color: #333;
+      }
+  }
+  
+   
+  
+ 
+  
+  .card-content {
+    padding: 1.5em;
+  }
+  
+  /* Section B */
+  
+  #section-tagline {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+  }
+  
+  /* Section D / Boxes */
+  
+  #section-info .box {
+    background-color: red;
+    padding: 2em;
+    color: #fff;
+  }
+  
+  #section-info .box:first-child {
+    background: #2690d4;
+  }
+  
+  /* Footer */
+  
+  
+  
+  /* Media Queries */
+  
+  @media (min-width: 700px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+  
+    #section-intro .content-text {
+      columns: 2;
+      column-gap: 2em;
+    }
+  
+    #section-intro .content-text p {
+      padding-top: 0;
+    }
+  
+    .content-wrap,
+    #section-showcase ul {
+      grid-column: 2/4;
+    }
+  
+    .box {
+      grid-column: span 2;
+    }
+  
+    #section-showcase ul {
+      display: flex;
+      justify-content: space-around;
 
-.port-footer{
-    background-color: $color-quaternary-light-1;
-}
+      li {
+        width: 31%;
+      }
+    }
+  
+    
+  }
+  
