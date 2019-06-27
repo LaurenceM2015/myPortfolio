@@ -16,7 +16,7 @@ Page Four: Resource page will consit of all the learing material and tools that 
     <li>The Resume page is build with Flexbox layout.
     <!--<a href="http://laurencemabilleau.com/resume.html">Visit the page</a>  -->
     </li>
-    <li>Portfolio page is build with CSS Grid Layout.
+    <li>Portfolio page is build with CSS Grid Layout. Containe full bleed sections and center sections.
     <!-- <a href="http://laurencemabilleau.com/portfolio.html">Visit the page</a> --> 
     </li>
     <li>Resources Page</li>
@@ -41,4 +41,8 @@ Page Four: Resource page will consit of all the learing material and tools that 
     <li>compress css</li>
     <li>build css</li>
 </ul>
+
+
+# Portfolio Page.
+
 

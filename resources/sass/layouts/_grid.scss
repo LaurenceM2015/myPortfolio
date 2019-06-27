@@ -29,7 +29,7 @@
 // NEW GRID
 
 .container:after,
-.row:after{
+.row:after, .port-feature:after{
     content: "";
     display: table;
     clear: both;

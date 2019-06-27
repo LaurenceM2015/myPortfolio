@@ -630,6 +630,22 @@ h2, h3, h4 {
 .port-features {
   background-color: #2998ff;
   grid-column: center-start / center-end; }
+  .port-features .feature {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start; }
+    .port-features .feature__box {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-row-gap: 1.5rem;
+      grid-column-gap: 2.5rem; }
+    .port-features .feature__icon {
+      fill: #2C3E50;
+      width: 4.5rem;
+      height: 4.5rem;
+      grid-row: 1 / span 2;
+      transform: translateX(-1rem); }
 
 .form__group:not(:last-child) {
   margin-bottom: .5rem; }
@@ -1003,7 +1019,7 @@ h2, h3, h4 {
       max-width: 114rem; } }
 
 .container:after,
-.row:after {
+.row:after, .port-feature:after {
   content: "";
   display: table;
   clear: both; }
@@ -1693,6 +1709,5 @@ div[class^="Col-"] {
 /* Header Showcase */
 .porfolio-container {
   display: grid;
-  grid-template-rows: [navbar-start] min-content [navbar-end header-start] 80vh [header-end feature-start] 40vw [feature-end] repeat(3, min-content);
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-areas: "navbar navbar" "header header" "section section" "footer footer"; }
+  grid-template-rows: [navbar-start] min-content [navbar-end header-start] 80vh [header-end] repeat(4, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }

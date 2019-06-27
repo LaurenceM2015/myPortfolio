@@ -25,9 +25,42 @@
 
 
 .port-features{
+   
     background-color: $color-tertiary-light;
     grid-column: center-start / center-end;
 
+
+    
+    // Feature Container
+    .feature {
+        
+        display: grid;
+        //grid-template-columns: repeat(3, 1fr);
+       // grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 6rem;
+        align-items: start;
+
+        // Features box 
+        &__box{
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            grid-row-gap: 1.5rem;
+            grid-column-gap: 2.5rem;
+            
+        }
+
+        &__icon {
+            fill: $color-secondary;
+            width: 4.5rem;
+            height: 4.5rem;
+            grid-row: 1 / span 2;
+            transform: translateX(-1rem);
+            
+        }
+    }
+    
     
     
 }
