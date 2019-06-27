@@ -169,3 +169,15 @@
         transform: rotate(-135deg);
     }
 }
+
+/*=================================================*/
+/*              PORTFOLIO PAGE NAVBAR              */
+/*=================================================*/
+
+.port-navbar{
+    background-color: $color-secondary;
+    padding: 30px;
+    grid-row: navbar-start / navbar-end;
+    grid-column: full-start / full-end;
+    
+}

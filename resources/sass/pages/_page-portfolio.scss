@@ -1,116 +1,27 @@
 /* Header Showcase */
 
-#port-header {
-    color: $color-white;
-    text-align: center;
-    background-color:$color-primary;
+.porfolio-container{
+    display: grid;
 
-    h1 {
-        padding-top: 100px;
-        padding-bottom: 0;
-      }
-  }
-  
-  
-  
-  #port-header .content-wrap,
-  #section-intro .content-wrap {
-    padding: 0 1.5em;
-  }
-  
-  /* Section A */
-  
-  #section-intro {
-    background: #eaeaea;
-    color: #333;
-    padding-bottom: 2em;
-  }
-  
-  /* Section A */
-  
-  #section-showcase {
-    padding: 2em 1em 1em;
-
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      li {
-        margin-bottom: 1em;
-        background: #fff;
-        color: #333;
-      }
-  }
-  
+    // navbar, header, realtors, features, story-picture, story-content;
+    //grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
    
-  
- 
-  
-  .card-content {
-    padding: 1.5em;
-  }
-  
-  /* Section B */
-  
-  #section-tagline {
-    background: #fff;
-    color: #333;
-    padding: 2em;
-  }
-  
-  /* Section D / Boxes */
-  
-  #section-info .box {
-    background-color: red;
-    padding: 2em;
-    color: #fff;
-  }
-  
-  #section-info .box:first-child {
-    background: #2690d4;
-  }
-  
-  /* Footer */
-  
-  
-  
-  /* Media Queries */
-  
-  @media (min-width: 700px) {
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-    }
-  
-    #section-intro .content-text {
-      columns: 2;
-      column-gap: 2em;
-    }
-  
-    #section-intro .content-text p {
-      padding-top: 0;
-    }
-  
-    .content-wrap,
-    #section-showcase ul {
-      grid-column: 2/4;
-    }
-  
-    .box {
-      grid-column: span 2;
-    }
-  
-    #section-showcase ul {
-      display: flex;
-      justify-content: space-around;
+    grid-template-rows: [navbar-start] min-content [navbar-end header-start] 80vh [header-end feature-start] 40vw [feature-end] repeat(3, min-content);
 
-      li {
-        width: 31%;
-      }
-    }
-  
+    // Naming the columns
+   // grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] 
+    //repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    // 114/ 8 = 142.5
+
     
-  }
-  
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+   grid-template-areas: "navbar navbar"
+                        "header header"
+                        "section section"
+                        "footer footer";
+
+}
+
+
