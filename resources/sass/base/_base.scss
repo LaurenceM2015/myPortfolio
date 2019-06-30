@@ -104,3 +104,8 @@ section{
         @include respond(tab-port){padding: 15rem 0;}
 }
 
+button{
+    border: 0 !important;
+    background-color: transparent;
+}
+

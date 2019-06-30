@@ -6,7 +6,7 @@
     // navbar, header, realtors, features, story-picture, story-content;
     //grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
    
-    grid-template-rows: [navbar-start] min-content [navbar-end header-start] 80vh [header-end] repeat(4, min-content);
+    grid-template-rows: [navbar-start] min-content [navbar-end header-start] 80vh [header-end] min-content 40vw repeat(3, min-content);
 
     // Naming the columns
    // grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] 
@@ -17,7 +17,8 @@
     
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
-
 }
+
+
 
 

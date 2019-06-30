@@ -5,8 +5,15 @@
 
 
 .port-portfolio{
-    
     background-color: $color-quaternary-light-1;
     grid-column: center-start / center-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7rem;
     
+}
+
+.home{
+    background-color: red;
 }
