@@ -76,15 +76,15 @@
 
     &__heading-span {
         padding: 1rem 1.5rem;
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone !important;
+        box-decoration-break: clone !important;
 
         background-image: linear-gradient(to right bottom, 
             rgba($color-primary-light, .85), 
             rgba($color-primary-dark, .85));
-
-       
     }
+
+   
 
     &__details {
         padding: 1rem 2rem;       
@@ -188,5 +188,60 @@
 /*=========================================*/ 
 /*        CSS GRID PORTFOLIO CARD          */
 /*=========================================*/ 
+
+
+.home, .portfolio-box{
+    //background-color:$color-grey-light-1;
+
+    //display: grid;
+    //grid-template-columns: repeat(2, 1fr);
+
+    &__front{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        
+    }
+
+    &__img{
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+    }
+
+    &__details{
+        grid-column: 1 / -1;
+    }
+
+    
+
+    &__heading{
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        justify-self: right;
+        align-self: center;
+        z-index: 3;
+
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        margin-right: 2rem;
+        width: 75%;
+        
+
+    }
+
+   
+
+    
+
+    &__btn{
+        grid-column: 1 / -1;
+        
+    }
+
+
+}
 
 
