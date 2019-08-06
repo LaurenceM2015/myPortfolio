@@ -1599,8 +1599,12 @@ div[class^="Col-"] {
   grid-column: full-start / full-end; }
 
 /*=================================================*/
-/*              PORTFOLIO PAGE FILTER NAVBAR              */
+/*           PORTFOLIO PAGE FILTER NAVBAR         */
 /*=================================================*/
+#port-navbar a.active, #port-navbar a:hover {
+  background-color: #fff;
+  color: #18BC9C; }
+
 .aside {
   background-color: var(--color-secondary);
   flex: 0 0 20%; }

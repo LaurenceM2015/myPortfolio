@@ -183,8 +183,16 @@
 }
 
 /*=================================================*/
-/*              PORTFOLIO PAGE FILTER NAVBAR              */
+/*           PORTFOLIO PAGE FILTER NAVBAR         */
 /*=================================================*/
+
+#port-navbar{
+    
+    a.active, a:hover{
+        background-color: $color-white;
+        color: $color-primary;
+    }
+}
 
 
 
