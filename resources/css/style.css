@@ -876,6 +876,8 @@ h2, h3, h4 {
 .port-portfolio {
   background-color: #fdcc52;
   grid-column: center-start / center-end; }
+  .port-portfolio__heading {
+    text-align: center !important; }
   .port-portfolio .grid-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -1596,6 +1598,9 @@ div[class^="Col-"] {
   grid-row: navbar-start / navbar-end;
   grid-column: full-start / full-end; }
 
+/*=================================================*/
+/*              PORTFOLIO PAGE FILTER NAVBAR              */
+/*=================================================*/
 .aside {
   background-color: var(--color-secondary);
   flex: 0 0 20%; }
