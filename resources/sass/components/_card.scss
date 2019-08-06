@@ -232,14 +232,24 @@
 
     }
 
-   
-
-    
-
-    &__btn{
-        grid-column: 1 / -1;
-        
+    &__back{
+       // display: grid;
     }
+
+   
+    &__cta{
+        //grid-column: 1 / -1;
+        display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__text, &__btn{
+        grid-column: 1 / -1;
+        justify-self: center; // from the row axis
+        align-self: end; // from the column axis
+    }
+
+    &__btn{}
 
 
 }

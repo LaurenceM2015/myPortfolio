@@ -543,8 +543,14 @@ h2, h3, h4 {
   margin-right: 2rem;
   width: 75%; }
 
-.home__btn, .portfolio-box__btn {
-  grid-column: 1 / -1; }
+.home__cta, .portfolio-box__cta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.home__text, .home__btn, .portfolio-box__text, .portfolio-box__btn {
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: end; }
 
 .composition {
   position: relative;
@@ -869,10 +875,11 @@ h2, h3, h4 {
 /*=================================================*/
 .port-portfolio {
   background-color: #fdcc52;
-  grid-column: center-start / center-end;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 1.5rem; }
+  grid-column: center-start / center-end; }
+  .port-portfolio .grid-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 1.5rem; }
 
 .process-box {
   background-color: rgba(255, 255, 255, 0.8);
