@@ -7,7 +7,7 @@ $(document).ready(function(){
 		var elem = $(this),
 		tags = elem.data('tags').split(',');
 		
-		//Add data attribute for quicksand
+		//Add data attribute for quicksand (elm = this)
 		elem.attr('data-id',i);
 		
 		$.each(tags,function(key,value){
@@ -31,14 +31,15 @@ $(document).ready(function(){
 		createList(k, v);
 	});
 	
-	//Click Handler
+	// Create a Click Handler
+	// click Event
 	$('#navbar a').live('click', function(e){
 		var link = $(this);
 		
 		//Add active class
 		link.addClass('active').siblings().removeClass('active');
 		
-		$('#gallery').quicksand(link.data('list').find('li'));
+	$('#gallery').quicksand(link.data('list').find('li'));
 		e.preventDefault();
 	});
 	
@@ -47,11 +48,12 @@ $(document).ready(function(){
 	//Create the lists
 	function createList(text,items){
 		//Create empty ul
-		var ul = $('<ul>',{'class':'hidden'});
+	var ul = $('<ul>',{'class':'hidden'});
 		
-		$.each(items, function(){
-			$(this).clone().appendTo(ul)
-		});
+	// loop through item
+	$.each(items, function(){
+		$(this).clone().appendTo(ul)
+	});
 		
 		//Add gallery div
 		ul.appendTo('#gallery');
@@ -61,6 +63,6 @@ $(document).ready(function(){
 			html:text,
 			href:'#',
 			data:{list:ul}
-		}).appendTo('#navbar');
-	}
+			}).appendTo('#navbar');
+		}
 });

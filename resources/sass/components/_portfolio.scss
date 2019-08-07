@@ -8,8 +8,22 @@
     background-color: $color-quaternary-light-1;
     grid-column: center-start / center-end;
 
+    overflow: hidden;
+
     &__heading{
         text-align: center !important;
+    }
+
+    &__list{
+        overflow:hidden;
+
+        .hidden{
+            display:none;
+        }
+    }
+
+    &__item{
+        position:relative;
     }
 
     .grid-card{
@@ -18,7 +32,11 @@
         grid-gap: 1.5rem;
     }
 
+
+
     
     
 }
+
+
 

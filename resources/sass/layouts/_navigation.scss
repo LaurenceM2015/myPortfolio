@@ -194,5 +194,46 @@
     }
 }
 
+.port-portfolio{
+
+    &__navbar{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+
+            a{
+            &:link,
+            &:visited {
+            display: inline-block;
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin: .4rem;
+            padding: 1rem;
+            color: $color-white;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 220%;
+            transition: all .4s;
+            outline: none;
+            }
+            
+            &:hover,
+            &:active {
+                background-position: 100%;
+                color: $color-primary;
+                transform: translateX(1rem);
+            }
+
+        }
+
+        .active{
+            background-position: 100%;
+            color: $color-primary !important;
+            transform: translateX(1rem);
+        }
+
+    }
+}
+
 
 
