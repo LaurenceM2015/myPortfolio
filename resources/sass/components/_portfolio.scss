@@ -3,40 +3,9 @@
 /*=================================================*/
 
 
-
-.port-portfolio{
-    background-color: $color-quaternary-light-1;
-    grid-column: center-start / center-end;
-
-    overflow: hidden;
-
-    &__heading{
-        text-align: center !important;
-    }
-
-    &__list{
-        overflow:hidden;
-
-        .hidden{
-            display:none;
-        }
-    }
-
-    &__item{
-        position:relative;
-    }
-
-    .grid-card{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        grid-gap: 1.5rem;
-    }
-
-
-
     
     
-}
+
 
 
 

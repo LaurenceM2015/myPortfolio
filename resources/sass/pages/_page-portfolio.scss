@@ -21,4 +21,17 @@
 
 
 
+.portfolio-projects {
+   grid-column: center-start / center-end;
+    //margin: 15rem 0;
+
+    content: "";
+    display: table;
+    clear: both;
+
+  
+}
+
+
+
 

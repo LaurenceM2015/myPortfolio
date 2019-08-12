@@ -173,74 +173,245 @@
         </div> <!-- CONTENT END -->
 
 
-        <section class="port-portfolio" id="main">
-            <!--.home{Home gridCard $}*6 -->
+        <section class="portfolio-projects" id="portfolio">
 
-            <div class="port-portfolio__heading">
-                <h2 class="heading-secondary u-margin-bottom-medium">My Porjects</h2>
+             <div class="port-portfolio__heading"><h2 class="heading-secondary u-margin-bottom-medium">My Porjects</h2></div>
 
-            </div>
+                <nav id="navbar" class="port-portfolio__navbar u-margin-bottom-medium"></nav> 
 
-            <nav id="navbar" class="port-portfolio__navbar u-margin-bottom-medium"></nav>
 
-            <ul class="grid-card port-portfolio__list" id="gallery">
-                <li class="port-portfolio__item" data-tags="HTML5/CSS3, JS/JQ, SASS">
+            <ul class="cards-row" id="gallery">
+                <li class="card-project" data-tags="HTML5/CSS3, JS/JQ, SASS">
+                    <img class="card-project__img" alt="Restaurant Frank'y hero image"
+                    srcset="resources/img/hero1-small.jpg 900w, resources/img/hero1-min-big.jpg 2500w"
+                    sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
+                    src="resources/img/hero1-small.jpg">
+                    <svg class="card-project__like">
+                        <use xlink:href="vendors/img/symbol-defs.svg#icon-gauge"></use>
+                    </svg>
+                    <h5 class="card-project__name">Beautiful Familiy House</h5>
+                    <div class="card-project__location">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                        </svg>
+                        <p>USA</p>
+                    </div>
+                    <div class="card-project__rooms">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                        </svg>
+                        <p>5 rooms</p>
+                    </div>
+                    <div class="card-project__area">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-expand"></use>
+                        </svg>
+                        <p>325 m<sup>2</sup></p>
+                    </div>
+                    <div class="card-project__price">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-key"></use>
+                        </svg>
+                        <p>$1,200,000</p>
+                    </div>
+                    <button class="btn card-project__btn">Contact realtor</button>
+                </li>
+                <!-- portfolio card 1 -->
+
+                <li class="card-project" data-tags="HTML5/CSS3, JS/JQ, Bootstrap">
+                    <img class="card-project__img" alt="Waterdroplet website hero image"
+                    srcset="resources/img/waterdrop-small.png 900w, resources/img/waterdrop-min.png 1280w"
+                    sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
+                    src="resources/img/waterdrop-small.png">
+                    <svg class="card-project__like">
+                        <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                    </svg>
+                    <h5 class="card-project__name">Modern Glass Villa</h5>
+                    <div class="card-project__location">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                        </svg>
+                        <p>Canada</p>
+                    </div>
+                    <div class="card-project__rooms">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                        </svg>
+                        <p>6 rooms</p>
+                    </div>
+                    <div class="card-project__area">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-expand"></use>
+                        </svg>
+                        <p>450 m<sup>2</sup></p>
+                    </div>
+                    <div class="card-project__price">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-key"></use>
+                        </svg>
+                        <p>$2,750,000</p>
+                    </div>
+                    <button class="btn card-project__btn">Contact realtor</button>
+                </li>
+                <!-- portfolio card 2 -->
+
+                <li class="card-project" data-tags="HTML5/CSS3, JS/JQ, WordPress">
+                    <img class="card-project__img" alt="Karate Shotokan Mardie"
+                    srcset="resources/img/KSM-hero.jpg 900w, resources/img/KSM-hero.jpg 1280w"
+                    sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
+                    src="resources/img/KSM-hero.jpg">
+
+                    <svg class="card-project__like">
+                        <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                    </svg>
+                    <h5 class="card-project__name">Cozy Country House</h5>
+                    <div class="card-project__location">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                        </svg>
+                        <p>UK</p>
+                    </div>
+                    <div class="card-project__rooms">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                        </svg>
+                        <p>4 rooms</p>
+                    </div>
+                    <div class="card-project__area">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-expand"></use>
+                        </svg>
+                        <p>250 m<sup>2</sup></p>
+                    </div>
+                    <div class="card-project__price">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-key"></use>
+                        </svg>
+                        <p>$850,000</p>
+                    </div>
+                    <button class="btn card-project__btn">Contact realtor</button>
+                </li>
+                <!-- portfolio card 3 -->
+
+                <li class="card-project" data-tags="HTML5/CSS3, JS/JQ, SASS">
+                    <img class="card-project__img" alt="We Rise to Shine Hero image"
+                    srcset="resources/img/WeRiseShineHero1-big-min.jpg 900w, resources/img/WeRiseShineHero2-big-min.jpg 1280w"
+                    sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
+                    src="resources/img/WeRiseShineHero1-big-min.jpg">
+
+                    <svg class="card-project__like">
+                        <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                    </svg>
+                    <h5 class="card-project__name">Large Rustical Villa</h5>
+                    <div class="card-project__location">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                        </svg>
+                        <p>Portugal</p>
+                    </div>
+                    <div class="card-project__rooms">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                        </svg>
+                        <p>6 rooms</p>
+                    </div>
+                    <div class="card-project__area">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-expand"></use>
+                        </svg>
+                        <p>480 m<sup>2</sup></p>
+                    </div>
+                    <div class="card-project__price">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-key"></use>
+                        </svg>
+                        <p>$1,950,000</p>
+                    </div>
+                    <button class="btn card-project__btn">Contact realtor</button>
+                </li>
+                <!-- portfolio card 4 -->
+
+                <li class="card-project" data-tags="WordPress, HTML5/CSS3, JS/JQ, Bootstrap">
+                    <img class="card-project__img" alt="Bootstrap Theme to WordPress Theme"
+                    srcset="resources/img/wordpBootsHero1.jpg 900w, resources/img/wordpBootsHero2.jpg 2000w"
+                    sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
+                    src="resources/img/wordpBootsHero1.jpg">
                     
-                    <figure class="">
-                        <img class="card__img" alt="Restaurant Frank'y hero image"
-                        srcset="resources/img/hero1-small.jpg 900w, resources/img/hero1-min-big.jpg 2500w"
-                        sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
-                        src="resources/img/hero1-small.jpg">
-                    </figure>
-                    
+                    <svg class="card-project__like">
+                        <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                    </svg>
+                    <h5 class="card-project__name">Majestic Palace House</h5>
+                    <div class="card-project__location">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                        </svg>
+                        <p>Germany</p>
+                    </div>
+                    <div class="card-project__rooms">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                        </svg>
+                        <p>18 rooms</p>
+                    </div>
+                    <div class="card-project__area">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-expand"></use>
+                        </svg>
+                        <p>4230 m<sup>2</sup></p>
+                    </div>
+                    <div class="card-project__price">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-key"></use>
+                        </svg>
+                        <p>$9,500,000</p>
+                    </div>
+                    <button class="btn card-project__btn">Contact realtor</button>
                 </li>
-                <li class="port-portfolio__item" data-tags="HTML5/CSS3, JS/JQ, Bootstrap">
-                    <figure class="">
-                               
-                        <img class="card__img" alt="Waterdroplet website hero image"
-                            srcset="resources/img/waterdrop-small.png 900w, resources/img/waterdrop-min.png 1280w"
-                            sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
-                            src="resources/img/waterdrop-small.png">
-                    </figure>        
-                </li>
-                <li class="port-portfolio__item" data-tags="HTML5/CSS3, JS/JQ, WordPress">
-                    <figure class="">
-                        <img class="card__img" alt="Karate Shotokan Mardie"
-                        srcset="resources/img/KSM-hero.jpg 900w, resources/img/KSM-hero.jpg 1280w"
-                        sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
-                        src="resources/img/KSM-hero.jpg">
-                    </figure>
-                </li>
-                <li class="port-portfolio__item" data-tags="HTML5/CSS3, JS/JQ, SASS">
-                    <figure class="">
-                        <img class="card__img" alt="We Rise to Shine Hero image"
-                            srcset="resources/img/WeRiseShineHero1-big-min.jpg 900w, resources/img/WeRiseShineHero2-big-min.jpg 1280w"
-                            sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
-                            src="resources/img/WeRiseShineHero1-big-min.jpg">
-                    </figure>           
-                </li>
-                <li class="port-portfolio__item" data-tags="WordPress, HTML5/CSS3, JS/JQ, Bootstrap">
-                    <figure class="">
-                        <img class="card__img" alt="Bootstrap Theme to WordPress Theme"
-                        srcset="resources/img/wordpBootsHero1.jpg 900w, resources/img/wordpBootsHero2.jpg 2000w"
-                        sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
-                        src="resources/img/wordpBootsHero1.jpg">
-                    </figure>
-                            
-                </li>
+                <!-- portfolio card 5-->
 
-                <li class="port-portfolio__item" data-tags="HTML5/CSS3, JS/JQ, SASS, PHP">
-                    <figure>
-                        <img class="card__img" alt="Omnifood takeaway hero image"
-                        srcset="resources/img/ominFoodHero1.jpg 900w, resources/img/ominFoodHero2.jpg 1280w"
-                        sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
-                        src="resources/img/ominFoodHero1.png">    
-                    </figure>
+                <li class="card-project" data-tags="HTML5/CSS3, JS/JQ, SASS, PHP">
+                    <img class="card-project__img" alt="Omnifood takeaway hero image"
+                    srcset="resources/img/ominFoodHero1.jpg 900w, resources/img/ominFoodHero2.jpg 1280w"
+                    sizes="(min-width: 50em) 40vw, (min-width: 62.5em) 50vw, (min-width: 112.5em) 60vw, 30vw"
+                    src="resources/img/ominFoodHero1.png">  
+                    
+                    <svg class="card-project__like">
+                        <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                    </svg>
+                    <h5 class="card-project__name">Majestic Palace House</h5>
+                    <div class="card-project__location">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                        </svg>
+                        <p>Germany</p>
+                    </div>
+                    <div class="card-project__rooms">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                        </svg>
+                        <p>18 rooms</p>
+                    </div>
+                    <div class="card-project__area">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-expand"></use>
+                        </svg>
+                        <p>4230 m<sup>2</sup></p>
+                    </div>
+                    <div class="card-project__price">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-key"></use>
+                        </svg>
+                        <p>$9,500,000</p>
+                    </div>
+                    <button class="btn card-project__btn">Contact realtor</button>
                 </li>
-               
-            </ul>
+                        <!-- portfolio card 6 -->
+
+                
+                
+            </ul><!-- ./ projects cards-->
         </section>
-
+        <!-- project section -->
 
         <footer class="port-footer"><h1>Portfolio Footer</h1></footer>
    
@@ -263,42 +434,3 @@
 
 </html>
 
-<!-- 
-            <div class="home">
-                <img src="resources/img/persPort3-min-small.jpg" alt="House 1" class="home__img">
-                <svg class="home__like">
-                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
-                </svg>
-                <h5 class="home__name">Beautiful Familiy House</h5>
-                <div class="home__location">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
-                    </svg>
-                    <p>USA</p>
-                </div>
-                <div class="home__rooms">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
-                    </svg>
-                    <p>5 rooms</p>
-                </div>
-                <div class="home__area">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#icon-expand"></use>
-                    </svg>
-                    <p>325 m<sup>2</sup></p>
-                </div>
-                <div class="home__price">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#icon-key"></use>
-                    </svg>
-                    <p>$1,200,000</p>
-                </div>
-                <button class="home__btn">Contact realtor</button>
-            </div> 
-            css grid port card 7 
-        -->
-
-
-
-  
