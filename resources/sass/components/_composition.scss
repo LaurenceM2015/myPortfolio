@@ -135,3 +135,34 @@
     }
 
 }
+
+
+// BLEND MODE IMAGE 
+
+.blendMode--picture{
+    background-size: cover;
+    background-blend-mode: screen;
+    
+    &--1{
+        //background-size: cover;
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+        url(/resources/img/hero1-small.jpg);
+    }
+
+    &--2{
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
+        url(/resources/img/KSM-hero.jpg);
+    }
+
+    &--3{
+        background-image: linear-gradient(to right bottom, $color-quaternary-light-1, $color-quaternary-dark-1), 
+        url(/resources/img/wordpBootsHero1.jpg); 
+    }
+}
+
+// CLIP PARTH PICTURE
+
+.clip-path-Picture{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}

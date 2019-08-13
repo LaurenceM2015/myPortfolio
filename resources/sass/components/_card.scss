@@ -29,9 +29,15 @@
            // background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 
             &-1{ background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);}
+<<<<<<< HEAD
 
             &-2{ background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark); }
 
+=======
+
+            &-2{ background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark); }
+
+>>>>>>> master
             &-3{ background-image: linear-gradient(to right bottom, $color-quaternary-light-2, $color-quaternary-dark-1); }
         }
     }
@@ -69,12 +75,13 @@
 
     &__heading-span {
         padding: 1rem 1.5rem;
+<<<<<<< HEAD
        // -webkit-box-decoration-break: clone !important;
        // box-decoration-break: clone !important;
 
+=======
+>>>>>>> master
     }
-
-   
 
     &__details {
         padding:2rem;       

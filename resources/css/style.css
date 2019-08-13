@@ -112,7 +112,6 @@ html {
 body {
   position: relative;
   box-sizing: border-box;
-  font-size: 1.6rem;
   background-color: #fff; }
 
 ::selection {
@@ -254,6 +253,19 @@ h2, h3, h4 {
       line-height: 145%;
       width: 70%;
       margin-left: 15%; } }
+
+.box-decoration-break {
+  -webkit-box-decoration-break: clone !important;
+  box-decoration-break: clone !important; }
+
+.gradient-heading--1 {
+  background-image: linear-gradient(to right bottom, rgba(44, 62, 80, 0.85), rgba(39, 55, 72, 0.85)); }
+
+.gradient-heading--2 {
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+
+.gradient-heading--3 {
+  background-image: linear-gradient(to right bottom, rgba(255, 119, 48, 0.85), rgba(253, 197, 57, 0.85)); }
 
 .u-text-uppercase {
   text-transform: uppercase; }
@@ -712,6 +724,20 @@ h2, h3, h4 {
         justify-content: center;
         align-items: flex-start;
         */ }
+
+.blendMode--picture {
+  background-size: cover;
+  background-blend-mode: screen; }
+  .blendMode--picture--1 {
+    background-image: linear-gradient(to right bottom, #2C3E50, #273748), url(/resources/img/hero1-small.jpg); }
+  .blendMode--picture--2 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(/resources/img/KSM-hero.jpg); }
+  .blendMode--picture--3 {
+    background-image: linear-gradient(to right bottom, #fdcc52, #ff7730), url(/resources/img/wordpBootsHero1.jpg); }
+
+.clip-path-Picture {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
 
 .cta {
   padding: 3.5rem 0;
