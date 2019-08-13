@@ -189,6 +189,13 @@
 /*        CSS GRID PORTFOLIO CARD          */
 /*=========================================*/ 
 
+
+
+/*=========================================*/ 
+/*        CSS GRID PRODUCT CARDs          */
+/*=========================================*/
+
+
 .cards-row{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -198,7 +205,7 @@
 
    }
 
-   .card-project{
+   .card-Product{
    
     background-color:$color-grey-light-1;
     display: grid;

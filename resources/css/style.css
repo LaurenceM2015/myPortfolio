@@ -518,13 +518,16 @@ h2, h3, h4 {
 /*=========================================*/
 /*        CSS GRID PORTFOLIO CARD          */
 /*=========================================*/
+/*=========================================*/
+/*        CSS GRID PRODUCT CARDs          */
+/*=========================================*/
 .cards-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 5rem;
   margin-bottom: 5%; }
 
-.card-project {
+.card-Product {
   background-color: #f4f4f4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -577,12 +580,12 @@ h2, h3, h4 {
   /*
      &__btn{}
     */ }
-  .card-project__img {
+  .card-Product__img {
     width: 100%;
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     z-index: 1; }
-  .card-project__like {
+  .card-Product__like {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     fill: #18BC9C;
@@ -591,7 +594,7 @@ h2, h3, h4 {
     z-index: 2;
     justify-self: end;
     margin: 1rem; }
-  .card-project__name {
+  .card-Product__name {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     justify-self: center;
@@ -606,19 +609,19 @@ h2, h3, h4 {
     color: #fff;
     font-weight: 400;
     transform: translateY(50%); }
-  .card-project__location, .card-project__rooms {
+  .card-Product__location, .card-Product__rooms {
     margin-top: 2.5rem; }
-  .card-project__location, .card-project__rooms, .card-project__area, .card-project__price {
+  .card-Product__location, .card-Product__rooms, .card-Product__area, .card-Product__price {
     font-size: 1.5rem;
     margin-left: 2rem;
     display: flex;
     align-items: center; }
-    .card-project__location svg, .card-project__rooms svg, .card-project__area svg, .card-project__price svg {
+    .card-Product__location svg, .card-Product__rooms svg, .card-Product__area svg, .card-Product__price svg {
       fill: #18BC9C;
       height: 2rem;
       width: 2rem;
       margin-right: 1rem; }
-  .card-project__btn {
+  .card-Product__btn {
     grid-column: 1 / -1;
     background-color: #18BC9C;
     border-radius: 0; }
