@@ -94,10 +94,40 @@
 /*              PORTFOLIO PAGE HEADER              */
 /*=================================================*/
 
-.port-header{
+.port-page-header{
     background-color: $color-primary;
    // grid-column: 1 / -1;
    grid-column: full-start / full-end;
+
+   background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), 
+   url(/resources/img/wordpBootsHero1.jpg);
+    background-size: cover;
+    background-position: center;
+   // padding: 4rem 0 0;
+   // padding-top: 4rem;
+
+    display: grid;
+    align-items: center;
+
+    &__text-box{
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: max-content;
+        grid-row-gap: 1.5rem;
+        justify-content: center;
+
+    }
+
+    &__btn {
+        align-self: start; // verticaly alignment 
+        justify-self: center; // horizantaly alignment
+       
+    }
+
+    //&__seenon-text {}
+
+   // &__seenon-logos { img {}}
     
 }
 

@@ -1607,9 +1607,23 @@ div[class^="Col-"] {
 /*=================================================*/
 /*              PORTFOLIO PAGE HEADER              */
 /*=================================================*/
-.port-header {
+.port-page-header {
   background-color: #18BC9C;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(rgba(44, 62, 80, 0.93), rgba(44, 62, 80, 0.93)), url(/resources/img/wordpBootsHero1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  align-items: center; }
+  .port-page-header__text-box {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: max-content;
+    grid-row-gap: 1.5rem;
+    justify-content: center; }
+  .port-page-header__btn {
+    align-self: start;
+    justify-self: center; }
 
 .navigation__checkbox {
   display: none; }
